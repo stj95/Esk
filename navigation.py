@@ -96,7 +96,7 @@ def psd_sensor_folder(folder_path, sensor_id):
     return output_df
 
 
-def psd_download_folder(download_folder_path, download_folders, sensors):
+def psd_download_folder(download_folder_path, download_folders, sensor):
     """
     Given a set of download folders and a set of sensors, this finds the correct sensor folders,
     PSDs the data using "psd_sensor_folder" and returns a concatenated data frame
@@ -110,17 +110,19 @@ def psd_download_folder(download_folder_path, download_folders, sensors):
 
     output_df = pd.DataFrame()
 
-    for sensor in sensors:
-        for download_folder in download_folders:
+    for download_folder in download_folders:
 
-            updated_path = download_folder_path + "\\" +  download_folder
+        updated_path = download_folder_path + "\\" +  download_folder
 
+        if isdir(updated_path):
             for suffix in suffixes:
                 sensor_id = sensor + suffix
                 sensor_path = updated_path + "\\" + sensor_id
                 sensor_df = psd_sensor_folder(sensor_path, sensor_id)
                 output_df = pd.concat([output_df, sensor_df])
 
+        else:
+            continue
 
     # output: ||TimeStamp| |Frequency| |PSD| |Sensor||
     return output_df

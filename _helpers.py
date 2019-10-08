@@ -134,7 +134,7 @@ def _get_timestamps(stream):
     :return:
     """
 
-    i_start = stream[0].stats.starttime.datetime
+    i_start = stream[0].stats.starttime.datetime.replace(microsecond=0)
     i_mins = i_start.minute
     i_hour = i_start.hour
 
@@ -149,7 +149,7 @@ def _get_timestamps(stream):
 
     # Define start and end point (+ 10 mins each because timestamp is at the end of the interval)
     start = i_start + timedelta(minutes=10)
-    end = stream[-1].stats.endtime.datetime + timedelta(minutes=10)
+    end = stream[-1].stats.endtime.datetime.replace(microsecond=0) + timedelta(minutes=10)
 
     # Split into 10 minute intervals & change to UTCDateTime
     t = np.arange(start, end, timedelta(minutes=10)).astype(datetime)
