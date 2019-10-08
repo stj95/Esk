@@ -1,9 +1,14 @@
 from obspy.core.utcdatetime import UTCDateTime
 from datetime import datetime, timedelta
+from scipy import signal
+from math import ceil, log2
+import pandas as pd
+import statistics
 import numpy as np
 
+
 """
-Helper functions
+Low level helper functions
 
 The general structure for processing the data should be:
     * select sample rates (_select_sample_rates)
@@ -14,32 +19,90 @@ The general structure for processing the data should be:
 """
 
 
-def _select_sample_rates(input_stream):
+def _get_calval(sensor_id):
     """
-    If there is a 200Hz trace, select it as it must be a radian, otherwise select the 100Hz traces
+    Reads the sens_details csv, and reads the correct calval
+    for the sensor id
+    """
+    filepath = "calvals.pkl"
+    try:
+        df = pd.read_pickle(filepath)
+        calval = df.loc[sensor_id]["calval"]
+    except KeyError as e:
+        print(e)
+        print("No CalVal, setting to 1")
+        calval = 1
+
+    return calval
+
+
+def _get_gain(sensor_id):
+    """
+    Reads the sens_details csv, and reads the correct gain value
+    for the sensor stream
+    """
+    filepath = "calvals.pkl"
+
+    try:
+        df = pd.read_pickle(filepath)
+        gain = df.loc[sensor_id]["gain"]
+    except KeyError as e:
+        print(e)
+        print("No Gain, setting to 1")
+        gain = 1
+    return gain
+
+
+def _get_decimation_factor(sensor_id):
+    """
+    The decimation factor, is the factor by which we reduce the sampling rate (SR), we can afford to drop the sampling
+    rate to 20Hz as we are interested only in frequencies below 10Hz (see Nyquist frequency). However since our pass
+    filters will have a certain roll off, to be safe we will drop the sampling rate to 50Hz, giving us a 15Hz buffer.
+
+    Fortis SR: 200Hz -> decimation_factor: 4
+    other SR:  100Hz -> decimation_factor: 2
+
+    :param sensor_id:
+    :return:
+    """
+
+    if sensor_id in ["Fortis1e2", "Fortis1n2", "Fortis1z2"]:
+        decimation_factor = 4
+    else:
+        decimation_factor = 2
+
+    return decimation_factor
+
+
+def _get_displacement_factor(sensor_id):
+    """
+    The displacement factor is the exponent of (2*pi*i*f) required to change from the current stream to displacement
+
+    acceleration -> displacement: exponent 4
+    velocity     -> displacement: exponent 2
+
+    :param sensor_id:
+    :return:
+    """
+    return
+
+
+def _select_channel(input_stream, stream_id):
+    """
+    selects the traces with the correct channels, depending on the instrument
 
     :param input_stream:
     :return:
     """
+    if stream_id in ["Fortis1e2", "Fortis1n2", "Fortis1z2"]:
+        input_stream = input_stream.select(channel="HH*")
+    elif stream_id in ["Rad1e2", "Rad1n2", "Rad1z2", "Rad2e2", "Rad2n2", "Rad2z2"]:
+        input_stream = input_stream.select(channel="HN*")
 
-    # make a copy of the stream because obspy
-    stream = input_stream.copy()
-
-    # get a list of the sample rates
-    sample_rates = [trace.stats.sample_rate for trace in stream]
-
-    # perform logic
-    if 200 in sample_rates:
-        stream.select(sample_rate=200)
-    elif 100 in sample_rates:
-        stream.select(sample_rate=100)
-    else:
-        raise Exception("The stream {} has no traces with sample rate 100, or 200Hz".format(stream))
-
-    return stream
+    return input_stream
 
 
-def _calibrate(stream, calval, gain):
+def _calibrate(stream, calval, gain, decimation_factor):
     """
     Calibrates the stream given a certain calval
 
@@ -49,8 +112,17 @@ def _calibrate(stream, calval, gain):
     :return:
     """
 
+    for trace in stream:
+        # set the calibration value
+        trace.stats.calib = calval / gain
 
-    return 0
+        # de-trend & decimate to avoid spectral leakage,
+        # we can afford to lose all frequencies above 50Hz so we decimate to that point (see Nyquist frequency)
+        trace.split()
+        trace.detrend('linear')
+        trace.decimate(decimation_factor)
+
+    return stream
 
 
 def _get_timestamps(stream):
@@ -69,14 +141,14 @@ def _get_timestamps(stream):
     # Force start at a ten minute interval
     diff = 10 - (i_mins % 10)
     if i_mins % 10 == 0:
-        i_start = i_start.replace(minute=(i_mins+1), second=0)
+        i_start = i_start.replace(minute=i_mins, second=0)
     elif i_mins > 50:
         i_start = i_start.replace(hour=(i_hour+1), minute=0, second=0)
     else:
         i_start = i_start.replace(minute=(i_mins+diff), second=0)
 
-    # Define start and end point
-    start = i_start
+    # Define start and end point (+ 10 mins each because timestamp is at the end of the interval)
+    start = i_start + timedelta(minutes=10)
     end = stream[-1].stats.endtime.datetime + timedelta(minutes=10)
 
     # Split into 10 minute intervals & change to UTCDateTime
@@ -103,6 +175,8 @@ def _stream_to_bins(input_stream, dates):
     for date in dates:
 
         # copy the stream because obspy (unbelievably slow but I cant think of a better way)
+        # POSSIBLE BETTER WAY: we just get the data out of the stream as step 1, then we have a list
+        # instead of a stream, which is MUCH cheaper to copy. Question is how to deal with the timestamps
         stream = input_stream.copy()
 
         # because the SCADA timestamp is always at the end of the interval, we should go back 10 minutes
@@ -110,17 +184,63 @@ def _stream_to_bins(input_stream, dates):
         timestamp = UTCDateTime(date).datetime
 
         # initialise a bin for a specific 10 minute interval
-        bin = []
+        new_bin = []
         # remove the data from the 10 minute stream and it to the bin
         for trace in stream:
             for data_point in trace.data:
-                bin.append(data_point)
+                new_bin.append(data_point)
 
         # now add the bin to the list of data_bins, and the corresponding timestamp to the list of timestamps
-        data_bins.append(bin)
-        timestamps.append(timestamp)
+        # but only if it is a full 10 minute bin, it should be fs * 10 * 60 (except the last bin will have 1 less sample
+        # so we also lose one sample off the other 10 min periods for consistency)
 
-        # make sure data_bins isn't empty for debugging purposes
-        assert not data_bins == []
+        if len(new_bin) == 50*10*60 - 1:
+            data_bins.append(new_bin)
+            timestamps.append(timestamp)
+        elif len(new_bin) == 50*10*60:
+            data_bins.append(new_bin[:-1])
+            timestamps.append(timestamp)
 
     return data_bins, timestamps
+
+
+def _fft_welchs(data):
+    """
+    A function which applies the fft, and welches method
+    in one function to return the PSD data.
+    """
+
+    fs = 50
+    n = len(data)
+
+    assert n == 30000-1, "Not full 10 minute period: {} instead of 29999".format(n)
+
+    f, pxx_den = signal.welch(data, fs=fs, nperseg=n//28, nfft=2**ceil(log2(abs(n/28))), detrend=False)
+
+    return f, pxx_den
+
+
+def _iqm(df):
+    """
+    Take the inter-quartile mean
+    """
+    data = list(df)
+    data.sort()
+    q1, q2 = np.nanpercentile(data, [25, 75])
+    print(q1, q2)
+    iqr_data = [item for item in data if q1 < item < q2]
+
+    if len(data) == 1:
+        iqm = data[0]
+    elif len(data) == 2:
+        iqm = statistics.mean(data)
+    else:
+        try:
+            iqm = statistics.mean(iqr_data)
+        except statistics.StatisticsError as e:
+            print(data)
+            iqm = np.nan
+            print(e)
+            pass
+
+    return iqm
