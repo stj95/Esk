@@ -223,11 +223,13 @@ S_Rad1 = pd.DataFrame(columns = ["Start", "End", "Quality", "Description"])
 S_Rad2 = pd.DataFrame(columns = ["Start", "End", "Quality", "Description"])
 S_Sensor0 = pd.DataFrame(columns = ["Start", "End", "Quality", "Description"])
 S_6o35 = pd.DataFrame(columns = ["Start", "End", "Quality", "Description"])
+S_6t93 = pd.DataFrame(columns = ["Start", "End", "Quality", "Description"])
 
 S_Rad1_setup = pd.DataFrame(columns = ["Start", "End", "Quality", "Description"])
 S_Rad2_setup = pd.DataFrame(columns = ["Start", "End", "Quality", "Description"])
 S_Sensor0_setup = pd.DataFrame(columns = ["Start", "End", "Setup", "Description"])
 S_6o35_setup = pd.DataFrame(columns = ["Start", "End", "Setup", "Description"])
+S_6t93_setup = pd.DataFrame(columns = ["Start", "End", "Quality", "Description"])
 
 
 
@@ -236,11 +238,11 @@ def read_flags(df):
 
     # Data Quality DataFrames
     DQFrames = {"6w19": S_6w19, "6v71": S_6v71, "6v70": S_6v70, "6v73": S_6v73,
-                "6v66": S_6v66, "6v24": S_6v24, "6o35": S_6o35, "Fortis1": S_Sensor0,
-                "Rad1": S_Rad1, "Rad2": S_Rad2}
+                "6v66": S_6v66, "6v24": S_6v24, "6o35": S_6o35, "6t93": S_6t93,
+                "Fortis1": S_Sensor0, "Rad1": S_Rad1, "Rad2": S_Rad2}
 
     # setup data frames
-    SetUpFrames = {"6w19": S_6w19_setup, "6v24": S_6v24_setup, "6v73": S_6v73_setup,
+    SetUpFrames = {"6w19": S_6w19_setup, "6v24": S_6v24_setup, "6v73": S_6v73_setup, "6t93": S_6t93_setup,
                    "6v70": S_6v70_setup, "6v71": S_6v71_setup, "6v66": S_6v66_setup, "6o35": S_6o35_setup,
                    "Fortis1": S_Sensor0_setup, "Rad1": S_Rad1_setup, "Rad2": S_Rad2_setup}
 

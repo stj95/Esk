@@ -79,14 +79,16 @@ def psd_sensor_folder(folder_path, sensor_id):
 
     output_df = pd.DataFrame()
 
+    # get the calibration factors
+    calval = _helpers._get_calval(sensor_id)
+    gain = _helpers._get_gain(sensor_id)
+    decimation_factor = _helpers._get_decimation_factor(sensor_id)
+    displacement_factor = _helpers._get_displacement_factor(sensor_id)
+
+    
     for file in listdir(folder_path):
         if (file.endswith(".gcf") and ("#" not in file)) or (file.endswith(".mseed")):
             print(sensor_id, file)
-            # get the calibration factors
-            calval = _helpers._get_calval(sensor_id)
-            gain = _helpers._get_gain(sensor_id)
-            decimation_factor = _helpers._get_decimation_factor(sensor_id)
-            displacement_factor = _helpers._get_displacement_factor(sensor_id)
 
             # read the stream
             stream = obspy.read(folder_path + "\\" + file)
@@ -114,15 +116,16 @@ def psd_download_folder(download_folder_path, download_folders, sensor):
 
         updated_path = download_folder_path + "\\" +  download_folder
 
-        if isdir(updated_path):
-            for suffix in suffixes:
-                sensor_id = sensor + suffix
-                sensor_path = updated_path + "\\" + sensor_id
+
+        for suffix in suffixes:
+            sensor_id = sensor + suffix
+            sensor_path = updated_path + "\\" + sensor_id
+            if isdir(sensor_path):
                 sensor_df = psd_sensor_folder(sensor_path, sensor_id)
                 output_df = pd.concat([output_df, sensor_df])
 
-        else:
-            continue
+            else:
+                continue
 
     # output: ||TimeStamp| |Frequency| |PSD| |Sensor||
     return output_df

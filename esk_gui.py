@@ -40,7 +40,7 @@ class EskGui(tk.Frame):
                               r"\5 Technical\5.1 Monitoring Campaign\381-190109-4013")
 
         self.download_options = tk.Variable(value=listdir(self.download_path))
-        self.sensor_options = tk.Variable(value=["6v70", "6v71", "6v73", "6w19", "6v24", "6o35",
+        self.sensor_options = tk.Variable(value=["6v70", "6v71", "6v73", "6w19", "6v24", "6o35", "6t93",
                                                  "Fortis1", "Rad1", "Rad2"])
 
         """
