@@ -112,10 +112,10 @@ def _calibrate(stream, calval, gain, decimation_factor):
     :return:
     """
 
+
     for trace in stream:
         # set the calibration value
-        trace.stats.calib = calval / gain
-
+        trace.data = trace.data * calval/gain
         # de-trend & decimate to avoid spectral leakage,
         # we can afford to lose all frequencies above 50Hz so we decimate to that point (see Nyquist frequency)
         trace.split()

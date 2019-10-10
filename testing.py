@@ -24,25 +24,17 @@ class TestCalibration(unittest.TestCase):
         test_output = _calibrate(test_stream1, 2, 1, 1)
 
         for trace in test_stream2:
-            for datapoint in trace.data:
-                datapoint = datapoint * 2
 
             trace.split()
             trace.detrend('linear')
             trace.decimate(1)
 
 
-        # firstly test that the two streams have the same number of traces
-        self.assertEqual(len(test_stream2), len(test_output))
-
-        # test that all the traces are the same length
-        for i in range(len(test_output)):
-            self.assertEqual(len(test_stream2[i]), len(test_output[i]))
 
         # test that all the datapoints are the same
         for i in range(len(test_output)):
             for j in range(len(test_output[i].data)):
-                self.assertEqual(test_stream2[i].data[j], test_output[i].data[j])
+                self.assertEqual(test_stream2[i].data[j]*2, test_output[i].data[j])
 
 
     def test_calibrate_decimation(self):

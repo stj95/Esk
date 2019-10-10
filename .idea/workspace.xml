@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f05db6cf-a369-4b50-aba1-76dfc17c95ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/esk_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/esk_gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/navigation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/_helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +18,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/navigation.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-206">
@@ -26,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_helpers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="152" selection-start-line="152" selection-end-line="152" />
+            <state relative-caret-position="250">
+              <caret line="118" column="45" selection-start-line="118" selection-start-column="45" selection-end-line="118" selection-end-column="45" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -41,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            <state relative-caret-position="280">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -53,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/esk_gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="39" column="86" lean-forward="true" selection-start-line="39" selection-start-column="86" selection-end-line="39" selection-end-column="86" />
+            <state relative-caret-position="425">
+              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -74,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add_flags.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="247" selection-start-line="247" selection-end-line="247" />
+            <state relative-caret-position="272">
+              <caret line="249" selection-start-line="249" selection-end-line="249" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -95,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -121,13 +122,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/tests.py" />
-        <option value="$PROJECT_DIR$/testing.py" />
         <option value="$PROJECT_DIR$/add_ons.py" />
-        <option value="$PROJECT_DIR$/add_flags.py" />
-        <option value="$PROJECT_DIR$/_helpers.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/esk_gui.py" />
         <option value="$PROJECT_DIR$/navigation.py" />
+        <option value="$PROJECT_DIR$/add_flags.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/testing.py" />
+        <option value="$PROJECT_DIR$/_helpers.py" />
       </list>
     </option>
   </component>
@@ -182,7 +183,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.esk_gui">
+  <component name="RunManager" selected="Python tests.Unittests for testing.TestCalibration.test_calibrate_calibration">
     <configuration name="_helpers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Branch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -316,11 +317,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for testing.TestCalibration.test_calibrate_calibration" />
         <item itemvalue="Python.esk_gui" />
         <item itemvalue="Python._helpers" />
         <item itemvalue="Python tests.Unittests for testing.TestCalibration" />
         <item itemvalue="Python tests.Unittests for testing.TestCalibration.test_calibrate_decimation" />
-        <item itemvalue="Python tests.Unittests for testing.TestCalibration.test_calibrate_calibration" />
       </list>
     </recent_temporary>
   </component>
@@ -338,43 +339,43 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.04 at 12h 48m 54s.xml">
+    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 04m 41s.xml">
       <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.04 at 12h 50m 13s.xml">
+    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 05m 15s.xml">
       <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.04 at 12h 50m 52s.xml">
+    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 05m 40s.xml">
       <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.04 at 12h 53m 11s.xml">
+    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 06m 31s.xml">
       <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.07 at 16h 14m 10s.xml">
+    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 07m 21s.xml">
       <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_decimation - 2019.10.07 at 16h 15m 06s.xml">
-      <configuration name="Unittests for testing.TestCalibration.test_calibrate_decimation" configurationId="tests" />
+    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 08m 20s.xml">
+      <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_decimation - 2019.10.07 at 16h 17m 03s.xml">
-      <configuration name="Unittests for testing.TestCalibration.test_calibrate_decimation" configurationId="tests" />
+    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 11m 47s.xml">
+      <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_testing_TestCalibration - 2019.10.07 at 16h 17m 24s.xml">
-      <configuration name="Unittests for testing.TestCalibration" configurationId="tests" />
+    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 12m 39s.xml">
+      <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_testing_TestCalibration - 2019.10.07 at 16h 17m 35s.xml">
-      <configuration name="Unittests for testing.TestCalibration" configurationId="tests" />
+    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 14m 04s.xml">
+      <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_testing_TestCalibration - 2019.10.07 at 16h 28m 24s.xml">
-      <configuration name="Unittests for testing.TestCalibration" configurationId="tests" />
+    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 14m 41s.xml">
+      <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5060241" side_tool="true" weight="0.2496474" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4939759" weight="0.2538787" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4939759" visible="true" weight="0.2538787" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32974428" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -382,10 +383,10 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32974428" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.32974428" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32974428" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.39973083" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4064603" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -419,83 +420,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>158</line>
+          <line>160</line>
           <option name="timeStamp" value="113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>156</line>
-          <option name="timeStamp" value="114" />
+          <line>115</line>
+          <option name="timeStamp" value="146" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>154</line>
-          <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>155</line>
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>151</line>
-          <option name="timeStamp" value="117" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>150</line>
-          <option name="timeStamp" value="118" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>146</line>
-          <option name="timeStamp" value="119" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>144</line>
-          <option name="timeStamp" value="120" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>143</line>
-          <option name="timeStamp" value="121" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>142</line>
-          <option name="timeStamp" value="122" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>141</line>
-          <option name="timeStamp" value="123" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>137</line>
-          <option name="timeStamp" value="124" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>136</line>
-          <option name="timeStamp" value="125" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>138</line>
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>147</line>
-          <option name="timeStamp" value="127" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>145</line>
-          <option name="timeStamp" value="128" />
+          <line>126</line>
+          <option name="timeStamp" value="147" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -519,30 +455,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="152" selection-start-line="152" selection-end-line="152" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/esk_gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="39" column="86" lean-forward="true" selection-start-line="39" selection-start-column="86" selection-end-line="39" selection-end-column="86" />
+        <state relative-caret-position="425">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
@@ -558,8 +474,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/add_flags.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="247" selection-start-line="247" selection-end-line="247" />
+        <state relative-caret-position="272">
+          <caret line="249" selection-start-line="249" selection-end-line="249" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -575,8 +491,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -587,6 +503,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-206">
           <caret line="87" column="3" selection-start-line="87" selection-start-column="3" selection-end-line="87" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="118" column="45" selection-start-line="118" selection-start-column="45" selection-end-line="118" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
