@@ -22,7 +22,7 @@ The general structure of this is as follows from low level to high level:
 """
 
 
-def psd_stream(stream, stream_id, calval, gain, decimation_factor):
+def psd_stream(stream, stream_id, calval, gain, decimation_factor, displacement_factor):
     """
     This does all the processing for one stream of any given length, this is the bulk of the work
 
@@ -54,8 +54,10 @@ def psd_stream(stream, stream_id, calval, gain, decimation_factor):
 
     array = np.full([len(data_bins), len(freq)], np.nan)
     for index, data_bin in enumerate(data_bins):
-        _, psd_data = _helpers._fft_welchs(data_bin)
-        array[index] = psd_data
+        freq, psd_data = _helpers._fft_welchs(data_bin)
+        # conversion to displacement
+        # note: np.divide & np.power - point wise operations
+        array[index] = np.divide(psd_data, np.power((2*np.pi*freq), displacement_factor))
 
     timestamp_df = pd.DataFrame(timestamps, columns=["TimeStamp"])
     df = pd.DataFrame(array, columns=freq)

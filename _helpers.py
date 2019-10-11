@@ -84,7 +84,18 @@ def _get_displacement_factor(sensor_id):
     :param sensor_id:
     :return:
     """
-    return
+
+    filepath = "calvals.pkl"
+
+    try:
+        df = pd.read_pickle(filepath)
+        displacement_factor = df[sensor_id]["displacement_factor"]
+    except KeyError as e:
+        print(e)
+        print("No displacement factor, setting to 1")
+        displacement_factor = 1
+
+    return displacement_factor
 
 
 def _select_channel(input_stream, stream_id):

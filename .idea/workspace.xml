@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f05db6cf-a369-4b50-aba1-76dfc17c95ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/test_helpers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/_helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calvals.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/calvals.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/navigation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,20 +20,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/navigation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-206">
-              <caret line="87" column="3" selection-start-line="87" selection-start-column="3" selection-end-line="87" selection-end-column="3" />
+            <state relative-caret-position="612">
+              <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_helpers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="118" column="45" selection-start-line="118" selection-start-column="45" selection-end-line="118" selection-end-column="45" />
+            <state relative-caret-position="646">
+              <caret line="99" selection-start-line="99" selection-end-line="99" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -40,10 +42,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testing.py">
+        <entry file="file://$PROJECT_DIR$/tests/test_helpers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="1071">
+              <caret line="63" column="78" selection-start-line="63" selection-start-column="78" selection-end-line="63" selection-end-column="78" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -54,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/esk_gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="782">
               <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
@@ -66,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add_ons.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -75,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add_flags.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="4216">
               <caret line="249" selection-start-line="249" selection-end-line="249" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -87,7 +89,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_scada.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="306">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
@@ -96,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="187">
               <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -124,10 +126,11 @@
         <option value="$PROJECT_DIR$/tests.py" />
         <option value="$PROJECT_DIR$/add_ons.py" />
         <option value="$PROJECT_DIR$/esk_gui.py" />
-        <option value="$PROJECT_DIR$/navigation.py" />
         <option value="$PROJECT_DIR$/add_flags.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/testing.py" />
+        <option value="$PROJECT_DIR$/tests/test_helpers.py" />
+        <option value="$PROJECT_DIR$/navigation.py" />
         <option value="$PROJECT_DIR$/_helpers.py" />
       </list>
     </option>
@@ -158,6 +161,11 @@
               <item name="Branch" type="b2602c69:ProjectViewProjectNode" />
               <item name="Branch" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Branch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Branch" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -168,8 +176,13 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/_helpers.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\tests" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -183,28 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for testing.TestCalibration.test_calibrate_calibration">
-    <configuration name="_helpers" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Branch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Anaconda3\envs\obspy\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_helpers.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests for test_helpers.TestCalibration">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Branch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -230,6 +222,9 @@
       <module name="Branch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Anaconda3\envs\obspy\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -265,35 +260,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for testing.TestCalibration" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_helpers.TestCalibration" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Branch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;testing.TestCalibration&quot;" />
+      <option name="_new_target" value="&quot;test_helpers.TestCalibration&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for tests.test_helpers.TestCalibration" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Branch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;testing.TestCalibration.test_calibrate_calibration&quot;" />
+      <option name="_new_target" value="&quot;tests.test_helpers.TestCalibration&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for testing.TestCalibration.test_calibrate_decimation" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for tests.test_helpers.TestCalibration.test_calibrate_calibration" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Branch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -303,25 +298,54 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;testing.TestCalibration.test_calibrate_decimation&quot;" />
+      <option name="_new_target" value="&quot;tests.test_helpers.TestCalibration.test_calibrate_calibration&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for tests.test_helpers.TestCalibration.test_calibrate_decimation" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Branch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_helpers.TestCalibration.test_calibrate_decimation&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for tests.testing.TestCalibration" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Branch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.testing.TestCalibration&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python._helpers" />
       <item itemvalue="Python.esk_gui" />
-      <item itemvalue="Python tests.Unittests for testing.TestCalibration.test_calibrate_calibration" />
-      <item itemvalue="Python tests.Unittests for testing.TestCalibration.test_calibrate_decimation" />
-      <item itemvalue="Python tests.Unittests for testing.TestCalibration" />
+      <item itemvalue="Python tests.Unittests for tests.testing.TestCalibration" />
+      <item itemvalue="Python tests.Unittests for tests.test_helpers.TestCalibration.test_calibrate_calibration" />
+      <item itemvalue="Python tests.Unittests for tests.test_helpers.TestCalibration.test_calibrate_decimation" />
+      <item itemvalue="Python tests.Unittests for tests.test_helpers.TestCalibration" />
+      <item itemvalue="Python tests.Unittests for test_helpers.TestCalibration" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for testing.TestCalibration.test_calibrate_calibration" />
+        <item itemvalue="Python tests.Unittests for test_helpers.TestCalibration" />
+        <item itemvalue="Python tests.Unittests for tests.test_helpers.TestCalibration" />
+        <item itemvalue="Python tests.Unittests for tests.testing.TestCalibration" />
         <item itemvalue="Python.esk_gui" />
-        <item itemvalue="Python._helpers" />
-        <item itemvalue="Python tests.Unittests for testing.TestCalibration" />
-        <item itemvalue="Python tests.Unittests for testing.TestCalibration.test_calibrate_decimation" />
+        <item itemvalue="Python tests.Unittests for tests.test_helpers.TestCalibration.test_calibrate_calibration" />
       </list>
     </recent_temporary>
   </component>
@@ -339,24 +363,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 04m 41s.xml">
-      <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 05m 15s.xml">
-      <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 05m 40s.xml">
-      <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 06m 31s.xml">
-      <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 07m 21s.xml">
-      <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 08m 20s.xml">
-      <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 11m 47s.xml">
       <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
     </history-entry>
@@ -369,13 +375,31 @@
     <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 14m 41s.xml">
       <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_testing_TestCalibration_test_calibrate_calibration - 2019.10.10 at 15h 15m 30s.xml">
+      <configuration name="Unittests for testing.TestCalibration.test_calibrate_calibration" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_testing_TestCalibration - 2019.10.10 at 15h 15m 55s.xml">
+      <configuration name="Unittests for testing.TestCalibration" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_testing_TestCalibration - 2019.10.10 at 15h 54m 18s.xml">
+      <configuration name="Unittests for testing.TestCalibration" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_testing_TestCalibration - 2019.10.10 at 16h 09m 37s.xml">
+      <configuration name="Unittests for testing.TestCalibration" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_testing_TestCalibration - 2019.10.10 at 16h 11m 17s.xml">
+      <configuration name="Unittests for testing.TestCalibration" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_helpers_TestCalibration - 2019.10.10 at 16h 15m 21s.xml">
+      <configuration name="Unittests for test_helpers.TestCalibration" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5060241" side_tool="true" weight="0.2496474" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4939759" visible="true" weight="0.2538787" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4939759" weight="0.2538787" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32974428" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -383,7 +407,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32974428" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32974428" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4064603" />
@@ -405,7 +429,7 @@
       <window_info anchor="bottom" id="Run" order="6" weight="0.32974428" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.39973083" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4064603" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -414,27 +438,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LAST_COMMIT_MESSAGE" value="" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>160</line>
-          <option name="timeStamp" value="113" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>115</line>
-          <option name="timeStamp" value="146" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/_helpers.py</url>
-          <line>126</line>
-          <option name="timeStamp" value="147" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tests.py" />
@@ -457,7 +460,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/esk_gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="782">
           <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
@@ -467,14 +470,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/add_ons.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="187">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/add_flags.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="4216">
           <caret line="249" selection-start-line="249" selection-end-line="249" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -484,14 +487,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/get_scada.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="306">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="187">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
@@ -499,17 +502,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/navigation.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-206">
-          <caret line="87" column="3" selection-start-line="87" selection-start-column="3" selection-end-line="87" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="1071">
+          <caret line="63" column="78" selection-start-line="63" selection-start-column="78" selection-end-line="63" selection-end-column="78" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -518,11 +514,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="118" column="45" selection-start-line="118" selection-start-column="45" selection-end-line="118" selection-end-column="45" />
+        <state relative-caret-position="646">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
         </state>
       </provider>
     </entry>
