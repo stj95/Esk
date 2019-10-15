@@ -109,6 +109,7 @@ def psd_download_folder(download_folder_path, download_folders, sensor):
     :param download_folders:
     :return:
     """
+    print("Hello")
 
     suffixes = ["z2", "n2", "e2"]
 
@@ -130,4 +131,3 @@ def psd_download_folder(download_folder_path, download_folders, sensor):
 
     # output: ||TimeStamp| |Frequency| |PSD| |Sensor||
     return output_df
-

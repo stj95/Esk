@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f05db6cf-a369-4b50-aba1-76dfc17c95ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/_helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_ons.py" beforeDir="false" afterPath="$PROJECT_DIR$/add_ons.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calvals.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/calvals.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/navigation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/navigation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-376">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="348">
+              <caret line="133" column="11" selection-start-line="133" selection-start-column="11" selection-end-line="133" selection-end-column="11" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -399,12 +395,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5060241" side_tool="true" weight="0.2496474" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4939759" visible="true" weight="0.2538787" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4939759" visible="true" weight="0.2538787" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32974428" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32974428" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="2" weight="0.32974428" />
       <window_info anchor="bottom" id="Message" order="3" />
@@ -484,8 +479,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/navigation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-376">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="348">
+          <caret line="133" column="11" selection-start-line="133" selection-start-column="11" selection-end-line="133" selection-end-column="11" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
