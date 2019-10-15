@@ -1,13 +1,6 @@
 from datetime import datetime
 
 
-def read_scada():
-    return 0
-
-
-def read_flags():
-    return 0
-
 
 def date_filter(df):
     """
@@ -17,7 +10,7 @@ def date_filter(df):
     :return: The filtered data frame
     """
 
-    date_ranges = [[datetime(2019, 9, 30, 19, 0, 0), datetime(2019, 10, 1, 8, 0, 0)]]
+    date_ranges = [[datetime(2019, 10, 1, 19, 0, 0), datetime(2019, 10, 10, 0, 0, 0)]]
 
     mask = 0
     for date_range in date_ranges:

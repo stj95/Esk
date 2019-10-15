@@ -52,15 +52,15 @@ def psd_stream(stream, stream_id, calval, gain, decimation_factor, displacement_
     # learn the dimension of frequency so as to initialise the array
     freq, _ = _helpers._fft_welchs(data_bins[0])
 
-    array = np.full([len(data_bins), len(freq)], np.nan)
+    array = np.full([len(data_bins), len(freq[1:])], np.nan)
     for index, data_bin in enumerate(data_bins):
         freq, psd_data = _helpers._fft_welchs(data_bin)
         # conversion to displacement
         # note: np.divide & np.power - point wise operations
-        array[index] = np.divide(psd_data, np.power((2*np.pi*freq), displacement_factor))
+        array[index] = np.divide(psd_data[1:], np.power((2*np.pi*freq[1:]), displacement_factor))
 
     timestamp_df = pd.DataFrame(timestamps, columns=["TimeStamp"])
-    df = pd.DataFrame(array, columns=freq)
+    df = pd.DataFrame(array, columns=freq[1:])
 
     merged_df = timestamp_df.merge(df, left_index=True, right_index=True, how="outer")
     melted_df = merged_df.melt("TimeStamp")
@@ -94,7 +94,7 @@ def psd_sensor_folder(folder_path, sensor_id):
 
             # read the stream
             stream = obspy.read(folder_path + "\\" + file)
-            data_frame = psd_stream(stream, sensor_id, calval, gain, decimation_factor)
+            data_frame = psd_stream(stream, sensor_id, calval, gain, decimation_factor, displacement_factor)
             output_df = pd.concat([output_df, data_frame])
 
     return output_df
@@ -118,7 +118,6 @@ def psd_download_folder(download_folder_path, download_folders, sensor):
 
         updated_path = download_folder_path + "\\" +  download_folder
 
-
         for suffix in suffixes:
             sensor_id = sensor + suffix
             sensor_path = updated_path + "\\" + sensor_id
@@ -131,6 +130,4 @@ def psd_download_folder(download_folder_path, download_folders, sensor):
 
     # output: ||TimeStamp| |Frequency| |PSD| |Sensor||
     return output_df
-
-
 

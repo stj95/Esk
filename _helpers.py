@@ -89,7 +89,7 @@ def _get_displacement_factor(sensor_id):
 
     try:
         df = pd.read_pickle(filepath)
-        displacement_factor = df[sensor_id]["displacement_factor"]
+        displacement_factor = df.loc[sensor_id]["displacement_factor"]
     except KeyError as e:
         print(e)
         print("No displacement factor, setting to 1")
