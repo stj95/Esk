@@ -185,13 +185,10 @@ def _stream_to_bins(input_stream, dates):
 
     for date in dates:
 
-        # copy the stream because obspy (unbelievably slow but I cant think of a better way)
-        # POSSIBLE BETTER WAY: we just get the data out of the stream as step 1, then we have a list
-        # instead of a stream, which is MUCH cheaper to copy. Question is how to deal with the timestamps
-        stream = input_stream.copy()
+
 
         # because the SCADA timestamp is always at the end of the interval, we should go back 10 minutes
-        stream.trim(UTCDateTime(date - timedelta(seconds=599.99)), UTCDateTime(date))
+        stream = input_stream.slice(UTCDateTime(date - timedelta(seconds=599.99)), UTCDateTime(date))
         timestamp = UTCDateTime(date).datetime
 
         # initialise a bin for a specific 10 minute interval
@@ -255,3 +252,23 @@ def _iqm(df):
             pass
 
     return iqm
+
+def _clean_gcfs(gcf_list):
+    """
+    removes duplicates and ensures they're all gcf files
+
+    :param gcf_list:
+    :return out_list:
+    """
+    out_list = []
+
+    for gcf in gcf_list:
+        try:
+            if (gcf.endswith(".gcf")) and ("#" not in gcf):
+                out_list.append(gcf)
+
+        except Exception as e:
+            print(e)
+            print("Error File: ", gcf)
+
+    return out_list

@@ -7,18 +7,33 @@ import _helpers
 
 """
 This is where we have the frame work for the program, it will navigate through the files and process the data
-with the use of the _helper functions
+with the use of the _helper functions.
 
 The general structure of this is as follows from low level to high level:
 
-    * psd_stream: This is the lowest level function, it takes one gcf file, and does all the calibration and PSD 
-                    work and outputs a data frame of the data psd data and corresponding frequency and timestamp
+PSD:
+
+    * psd_stream: This is the lowest level PSD function, it takes one gcf file, and does all the calibration and PSD 
+                    work and outputs a data frame of the data psd data and corresponding frequency and timestamp.
                     
     * psd_sensor_folder: Now we are just looking for directions to point psd_stream in, so we design a function to
                     read one sensor folder using psd_stream.
                     
-    * psd_download_folder: We can now use psd_sensor_folder to deal with an entire download folder
+    * psd_download_folder: We can now use psd_sensor_folder to deal with an entire download folder.
     
+CORRELATION:
+
+    * correlate_streams: This is the lowest level correlation function, given two streams, it will return the cross
+                    correlation function.
+                    
+    * cross_spectral_density_streams: This function will take the cross correlation function from correlate_streams
+                    and perform a fourier transform, giving us the cross spectral density.
+    
+    * correlate_sensor_folders: Given two sensor folders, this will form two large streams from each sensor folder,
+                    then intersect the streams, and correlate them using correlate_streams.
+                    
+    * correlate_download_folder: Given a set of streams, with corresponding streams to correlate with this, will 
+                    perform all of those correlation functions.
 """
 
 
@@ -109,7 +124,6 @@ def psd_download_folder(download_folder_path, download_folders, sensor):
     :param download_folders:
     :return:
     """
-    print("Hello")
 
     suffixes = ["z2", "n2", "e2"]
 
