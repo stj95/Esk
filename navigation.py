@@ -1,9 +1,12 @@
 from os.path import isdir
 from os import listdir
+from scipy import signal
+from obspy.core.stream import Stream
 import obspy
 import numpy as np
 import pandas as pd
 import _helpers
+import scipy.fftpack as fftp
 
 """
 This is where we have the frame work for the program, it will navigate through the files and process the data
@@ -51,30 +54,38 @@ def psd_stream(stream, stream_id, calval, gain, decimation_factor, displacement_
     # calibrate the stream (applies calvals, de-trends, and decimates)
     stream = _helpers._calibrate(stream, calval, gain, decimation_factor)
     # get the timestamps which we want to split the stream into
-    template_timestamps = _helpers._get_timestamps(stream)
+    try:
+        template_timestamps = _helpers._get_timestamps(stream)
+    except ValueError:
+        # This catches an error where im _get_timestamps we assign an hour > 24
+        # TODO: Find a workaround for the above error
+        template_timestamps = []
+        pass
+
     # split the stream between those timestamps
-    data_bins, timestamps = _helpers._stream_to_bins(stream, template_timestamps)
+    # noting data_per_bin is a dict {timestamp: data for that bin}
+    data_per_bin = _helpers._stream_to_bins(stream, template_timestamps)
 
     # It can happen that we read a stream with no full 10 minute bins, in this case we should just
     # return an empty data frame
-    if data_bins == []:
-        return
+    if len(data_per_bin) == 0:
+        return pd.DataFrame()
 
     # we have the data for each 10 minute time period, and corresponding timestamp
     # now we need to use welchs method on each 10 minute interval to calculate the PSD
     # for each 10 minute bin, psd the data and put it into the array
 
     # learn the dimension of frequency so as to initialise the array
-    freq, _ = _helpers._fft_welchs(data_bins[0])
+    freq, _ = _helpers._fft_welchs(list(data_per_bin.values())[0])
+    array = np.full([len(data_per_bin), len(freq[1:])], np.nan)
 
-    array = np.full([len(data_bins), len(freq[1:])], np.nan)
-    for index, data_bin in enumerate(data_bins):
+    for index, (timestamp, data_bin) in enumerate(data_per_bin.items()):
         freq, psd_data = _helpers._fft_welchs(data_bin)
         # conversion to displacement
         # note: np.divide & np.power - point wise operations
         array[index] = np.divide(psd_data[1:], np.power((2*np.pi*freq[1:]), displacement_factor))
 
-    timestamp_df = pd.DataFrame(timestamps, columns=["TimeStamp"])
+    timestamp_df = pd.DataFrame(sorted(data_per_bin.keys()), columns=["TimeStamp"])
     df = pd.DataFrame(array, columns=freq[1:])
 
     merged_df = timestamp_df.merge(df, left_index=True, right_index=True, how="outer")
@@ -103,12 +114,15 @@ def psd_sensor_folder(folder_path, sensor_id):
     displacement_factor = _helpers._get_displacement_factor(sensor_id)
 
     
-    for file in listdir(folder_path):
+    for file in listdir(folder_path)[15:25]:
         if (file.endswith(".gcf") and ("#" not in file)) or (file.endswith(".mseed")):
             print(sensor_id, file)
 
             # read the stream
-            stream = obspy.read(folder_path + "\\" + file)
+            try:
+                stream = obspy.read(folder_path + "\\" + file)
+            except ValueError:
+                continue
             data_frame = psd_stream(stream, sensor_id, calval, gain, decimation_factor, displacement_factor)
             output_df = pd.concat([output_df, data_frame])
 
@@ -145,3 +159,130 @@ def psd_download_folder(download_folder_path, download_folders, sensor):
 
     # output: ||TimeStamp| |Frequency| |PSD| |Sensor||
     return output_df
+
+
+"""
+Correlation
+"""
+
+def correlate_streams(stream1, stream2):
+    """
+    Takes two streams, and correlates them, returning the full length cross correlation (cc) function
+
+    :param stream1:
+    :param stream2:
+    :return: dict{timestamp: cross correlation}
+    """
+
+    dates1 = _helpers._get_timestamps(stream1)
+    dates2 = _helpers._get_timestamps(stream2)
+
+    # slice the two streams, into 10 minute bins
+    sliced1 = _helpers._stream_to_bins(stream1, dates1)
+    sliced2 = _helpers._stream_to_bins(stream2, dates2)
+
+    # correlate the time periods that are in both streams:
+    # returns {timestamp_i: cross correlation_i} for i in len(intersection)
+    output = {ts: signal.correlate(sliced1[ts], sliced2[ts]) for ts in sliced1 if ts in sliced2}
+
+    return output
+
+def csd_streams(stream1, stream2, displacement_factor):
+    """
+
+    :param stream1:
+    :param stream2:
+    :return:
+    """
+
+    dates1 = _helpers._get_timestamps(stream1)
+    dates2 = _helpers._get_timestamps(stream2)
+
+    sliced1 = _helpers._stream_to_bins(stream1, dates1)
+    sliced2 = _helpers._stream_to_bins(stream2, dates2)
+
+    # intersect the streams
+    intersected1 = {ts: sliced1[ts] for ts in sliced1 if ts in sliced2}
+    intersected2 = {ts: sliced2[ts] for ts in sliced2 if ts in sliced1}
+
+    # initialise the array
+    freq, _ = _helpers._fft_welchs(list(intersected1.values())[0])
+    array = np.full([len(intersected2), len(freq[1:])], np.nan)
+
+    for index, ts in enumerate(intersected1.keys()):
+        freq, csd_data = _helpers._csd_welches(intersected1[ts], intersected2[ts])
+        # conversion to displacement
+        # note: np.divide & np.power - pointwise operations
+        # bigger NOTE: this will only currently work for streams which require the same
+        #               displacement factor. I.e. (velocity-velocity or acceleration-acceleration)
+
+        array[index] = np.divide(np.abs(csd_data[1:]), np.power((2*np.pi*freq[1:]), displacement_factor))
+
+
+    timestamp_df = pd.DataFrame(sorted(intersected1.keys()), columns=["TimeStamp"])
+    df = pd.DataFrame(array, columns=freq[1:])
+
+    merged_df = timestamp_df.merge(df, left_index=True, right_index=True, how="outer")
+    melted_df = merged_df.melt("TimeStamp")
+    melted_df = melted_df.rename(columns={"variable": "Frequency", "value": "PSD"})
+    melted_df = melted_df[(melted_df["Frequency"] <= 10) & (melted_df["Frequency"] > 0)]
+
+    # this obviously needs some other naming convention since its the correlation of two streams
+    # melted_df["Sensor"] = stream_id
+
+    return melted_df
+
+def correlate_sensor_folder(path, sensor1, sensor2):
+    """
+
+    :param folder1:
+    :param folder2:
+    :return:
+    """
+
+    def read_gcf(folder):
+        stream = Stream()
+        for gcf in listdir(folder)[15:25]:
+            try:
+                stream += obspy.read(folder + "\\" + gcf)
+            except Exception as e:
+                print(e)
+                continue
+        return stream
+
+    # read the streams
+    print("reading {}".format(sensor1))
+    stream1 = read_gcf(path + "\\" + sensor1)
+
+    print("reading {}".format(sensor2))
+    stream2 = read_gcf(path + "\\" + sensor2)
+
+    # get the calibration values
+    print("calibrating")
+    calval1 = _helpers._get_calval(sensor1)
+    calval2 = _helpers._get_calval(sensor2)
+
+    gain1 = _helpers._get_gain(sensor1)
+    gain2 = _helpers._get_gain(sensor2)
+
+    decimation_factor1 = _helpers._get_decimation_factor(sensor1)
+    decimation_factor2 = _helpers._get_decimation_factor(sensor2)
+
+    displacement_factor1 = _helpers._get_displacement_factor(sensor1)
+    displacement_factor2 = _helpers._get_displacement_factor(sensor2)
+
+    # select the right channel
+    stream1 = _helpers._select_channel(stream1, sensor1)
+    stream2 = _helpers._select_channel(stream2, sensor2)
+
+    # calibrate the streams
+    stream1 = _helpers._calibrate(stream1, calval1, gain1, decimation_factor1)
+    stream2 = _helpers._calibrate(stream2, calval2, gain2, decimation_factor2)
+
+    print("csd-ing")
+    csd_dataframe = csd_streams(stream1, stream2, displacement_factor1)
+
+    return csd_dataframe
+
+def correlate_download_folder(path):
+    return 0

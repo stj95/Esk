@@ -21,7 +21,7 @@ The general structure for processing the data should be:
 
 def _get_calval(sensor_id):
     """
-    Reads the sens_details csv, and reads the correct calval
+    Reads the calvals.pkl pickle, and reads the correct calval
     for the sensor id
     """
     filepath = "calvals.pkl"
@@ -108,7 +108,7 @@ def _select_channel(input_stream, stream_id):
     if stream_id in ["Fortis1e2", "Fortis1n2", "Fortis1z2"]:
         input_stream = input_stream.select(channel="HH*")
     elif stream_id in ["Rad1e2", "Rad1n2", "Rad1z2", "Rad2e2", "Rad2n2", "Rad2z2"]:
-        input_stream = input_stream.select(channel="HN*")
+        input_stream = input_stream.select(channel="HN{}".format(stream_id[-2].capitalize()))
 
     return input_stream
 
@@ -120,9 +120,8 @@ def _calibrate(stream, calval, gain, decimation_factor):
     :param stream:
     :param calval:
     :param gain:
-    :return:
+    :return: stream
     """
-
 
     for trace in stream:
         # set the calibration value
@@ -142,7 +141,7 @@ def _get_timestamps(stream):
     the actual data stream
 
     :param stream:
-    :return:
+    :return: list
     """
 
     i_start = stream[0].stats.starttime.datetime.replace(microsecond=0)
@@ -160,10 +159,10 @@ def _get_timestamps(stream):
 
     # Define start and end point (+ 10 mins each because timestamp is at the end of the interval)
     start = i_start + timedelta(minutes=10)
-    end = stream[-1].stats.endtime.datetime.replace(microsecond=0) + timedelta(minutes=10)
+    end = stream[-1].stats.endtime.datetime.replace(microsecond=0) + timedelta(seconds=1)
 
     # Split into 10 minute intervals & change to UTCDateTime
-    t = np.arange(start, end, timedelta(minutes=10)).astype(datetime)
+    t = np.arange(start, end+timedelta(minutes=10), timedelta(minutes=10)).astype(datetime)
     updateTime = lambda x: UTCDateTime(x)
     newt = list(map(updateTime, t))
 
@@ -176,16 +175,17 @@ def _stream_to_bins(input_stream, dates):
 
     :param input_stream:
     :param dates:
-    :return:
+    :return: dict{time stamp: data}
     """
 
     # initialise lists to hold the 10 minute data lists and the corresponding timestamps
     data_bins = []
     timestamps = []
 
+    # initialise a dictionary to hold a ten minute time stamp and the corresponding set of stream data
+    data_per_bin = {}
+
     for date in dates:
-
-
 
         # because the SCADA timestamp is always at the end of the interval, we should go back 10 minutes
         stream = input_stream.slice(UTCDateTime(date - timedelta(seconds=599.99)), UTCDateTime(date))
@@ -203,13 +203,11 @@ def _stream_to_bins(input_stream, dates):
         # so we also lose one sample off the other 10 min periods for consistency)
 
         if len(new_bin) == 50*10*60 - 1:
-            data_bins.append(new_bin)
-            timestamps.append(timestamp)
+            data_per_bin[timestamp] = new_bin
         elif len(new_bin) == 50*10*60:
-            data_bins.append(new_bin[:-1])
-            timestamps.append(timestamp)
+            data_per_bin[timestamp] = new_bin[:-1]
 
-    return data_bins, timestamps
+    return data_per_bin
 
 
 def _fft_welchs(data):
@@ -226,6 +224,27 @@ def _fft_welchs(data):
     f, pxx_den = signal.welch(data, fs=fs, nperseg=n//28, nfft=2**ceil(log2(abs(n/28))), detrend=False)
 
     return f, pxx_den
+
+
+def _csd_welches(data1, data2):
+    """
+    calculates the cross spectral density using welches method
+
+    :param data1:
+    :param data2:
+    :return:
+    """
+
+    fs = 50
+    n1 = len(data1)
+    n2 = len(data2)
+
+    assert n1 == n2, "different length streams: {} vs {}".format(n1, n2)
+    assert n1 == 30000-1, "Not full 10 minute period: {} instead of 29999".format(n1)
+
+    f, cxy_den = signal.csd(data1, data2, fs=fs, nperseg=n1//28, nfft=2**ceil(log2(abs(n1/28))), detrend=False)
+
+    return f, cxy_den
 
 
 def _iqm(df):
@@ -252,6 +271,7 @@ def _iqm(df):
             pass
 
     return iqm
+
 
 def _clean_gcfs(gcf_list):
     """

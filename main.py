@@ -23,7 +23,7 @@ def target(download_folders, sensors, output_path):
     download_folders_path = (r"Q:\1 Projects\2 Development\381 Eskdalemuir"
                              r"\5 Technical\5.1 Monitoring Campaign\381-190109-4013")
 
-    scada_path = r"U:\StephenJ\26_6-11_7_Testing\SCADA_20191009.csv"
+    scada_path = r"U:\StephenJ\26_6-11_7_Testing\SCADA_20191028.csv"
 
     arguments = [(download_folders_path, download_folders, sensor) for sensor in sensors]
 
@@ -47,10 +47,10 @@ def target(download_folders, sensors, output_path):
     """
     Filter by specific dates
     """
-    print("Date Filtering")
-    output_df = add_ons.date_filter(output_df)
+    #print("Date Filtering")
+    #output_df = add_ons.date_filter(output_df)
 
-    output_df = output_df.rename(columns={"Frequency": "Frequency (Hz)"})
+    #output_df = output_df.rename(columns={"Frequency": "Frequency (Hz)"})
 
     print("writing to file")
     output_df.to_csv(output_path, index=False)
