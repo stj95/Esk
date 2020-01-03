@@ -2,11 +2,14 @@ from os.path import isdir
 from os import listdir
 from scipy import signal
 from obspy.core.stream import Stream
+from decs import logit
+from scipy import integrate
 import obspy
 import numpy as np
 import pandas as pd
 import _helpers
 import scipy.fftpack as fftp
+import logging
 
 """
 This is where we have the frame work for the program, it will navigate through the files and process the data
@@ -40,6 +43,7 @@ CORRELATION:
 """
 
 
+@logit
 def psd_stream(stream, stream_id, calval, gain, decimation_factor, displacement_factor):
     """
     This does all the processing for one stream of any given length, this is the bulk of the work
@@ -56,7 +60,8 @@ def psd_stream(stream, stream_id, calval, gain, decimation_factor, displacement_
     # get the timestamps which we want to split the stream into
     try:
         template_timestamps = _helpers._get_timestamps(stream)
-    except ValueError:
+    except Exception as e:
+        logging.error("Error with _helper: _get_timestamps", exc_info=e)
         # This catches an error where im _get_timestamps we assign an hour > 24
         # TODO: Find a workaround for the above error
         template_timestamps = []
@@ -96,7 +101,7 @@ def psd_stream(stream, stream_id, calval, gain, decimation_factor, displacement_
 
     return melted_df
 
-
+@logit
 def psd_sensor_folder(folder_path, sensor_id):
     """
     Given a folder with GCF files in, this function just PSDs each GCF and concatenates them
@@ -113,22 +118,23 @@ def psd_sensor_folder(folder_path, sensor_id):
     decimation_factor = _helpers._get_decimation_factor(sensor_id)
     displacement_factor = _helpers._get_displacement_factor(sensor_id)
 
-    
-    for file in listdir(folder_path)[15:25]:
+
+    for file in listdir(folder_path):
         if (file.endswith(".gcf") and ("#" not in file)) or (file.endswith(".mseed")):
             print(sensor_id, file)
 
             # read the stream
             try:
                 stream = obspy.read(folder_path + "\\" + file)
-            except ValueError:
+            except ValueError as e:
+                logging.error("Couldn't read stream {}".format((folder_path + "\\" + file)), exc_info=e)
                 continue
             data_frame = psd_stream(stream, sensor_id, calval, gain, decimation_factor, displacement_factor)
             output_df = pd.concat([output_df, data_frame])
 
     return output_df
 
-
+@logit
 def psd_download_folder(download_folder_path, download_folders, sensor):
     """
     Given a set of download folders and a set of sensors, this finds the correct sensor folders,
@@ -165,6 +171,7 @@ def psd_download_folder(download_folder_path, download_folders, sensor):
 Correlation
 """
 
+@logit
 def correlate_streams(stream1, stream2):
     """
     Takes two streams, and correlates them, returning the full length cross correlation (cc) function
@@ -187,7 +194,8 @@ def correlate_streams(stream1, stream2):
 
     return output
 
-def csd_streams(stream1, stream2, displacement_factor):
+@logit
+def csd_streams(stream1, stream2, displacement_factor1, displacement_factor2):
     """
 
     :param stream1:
@@ -201,6 +209,11 @@ def csd_streams(stream1, stream2, displacement_factor):
     sliced1 = _helpers._stream_to_bins(stream1, dates1)
     sliced2 = _helpers._stream_to_bins(stream2, dates2)
 
+    print("integrating stream1")
+    sliced1 = {ts:_helpers._time_integrate(data, displacement_factor1) for ts, data in sliced1.items()}
+    print("integrating stream2")
+    sliced2 = {ts:_helpers._time_integrate(data, displacement_factor2) for ts, data in sliced2.items()}
+
     # intersect the streams
     intersected1 = {ts: sliced1[ts] for ts in sliced1 if ts in sliced2}
     intersected2 = {ts: sliced2[ts] for ts in sliced2 if ts in sliced1}
@@ -212,12 +225,11 @@ def csd_streams(stream1, stream2, displacement_factor):
     for index, ts in enumerate(intersected1.keys()):
         freq, csd_data = _helpers._csd_welches(intersected1[ts], intersected2[ts])
         # conversion to displacement
-        # note: np.divide & np.power - pointwise operations
+        # note: np.divide & np.power - point wise operations
         # bigger NOTE: this will only currently work for streams which require the same
         #               displacement factor. I.e. (velocity-velocity or acceleration-acceleration)
 
-        array[index] = np.divide(np.abs(csd_data[1:]), np.power((2*np.pi*freq[1:]), displacement_factor))
-
+        array[index] = np.abs(csd_data[1:])
 
     timestamp_df = pd.DataFrame(sorted(intersected1.keys()), columns=["TimeStamp"])
     df = pd.DataFrame(array, columns=freq[1:])
@@ -232,6 +244,7 @@ def csd_streams(stream1, stream2, displacement_factor):
 
     return melted_df
 
+@logit
 def correlate_sensor_folder(path, sensor1, sensor2):
     """
 
@@ -240,22 +253,23 @@ def correlate_sensor_folder(path, sensor1, sensor2):
     :return:
     """
 
-    def read_gcf(folder):
+    def read_folder(folder):
         stream = Stream()
-        for gcf in listdir(folder)[15:25]:
+        for file in listdir(folder):
             try:
-                stream += obspy.read(folder + "\\" + gcf)
+                stream += obspy.read(folder + "\\" + file)
             except Exception as e:
+                logging.error("Couldnt append stream {}".format((folder + "\\" + file)), exc_info=e)
                 print(e)
                 continue
         return stream
 
     # read the streams
     print("reading {}".format(sensor1))
-    stream1 = read_gcf(path + "\\" + sensor1)
+    stream1 = read_folder(path + "\\" + sensor1)
 
     print("reading {}".format(sensor2))
-    stream2 = read_gcf(path + "\\" + sensor2)
+    stream2 = read_folder(path + "\\" + sensor2)
 
     # get the calibration values
     print("calibrating")
@@ -280,9 +294,10 @@ def correlate_sensor_folder(path, sensor1, sensor2):
     stream2 = _helpers._calibrate(stream2, calval2, gain2, decimation_factor2)
 
     print("csd-ing")
-    csd_dataframe = csd_streams(stream1, stream2, displacement_factor1)
+    csd_data_frame = csd_streams(stream1, stream2, displacement_factor1, displacement_factor2)
 
-    return csd_dataframe
+    return csd_data_frame
+
 
 def correlate_download_folder(path):
     return 0

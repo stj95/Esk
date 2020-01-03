@@ -4,6 +4,8 @@ import navigation
 import get_scada
 import add_flags
 import add_ons
+import logging
+from os.path import splitext, basename
 
 
 def target(download_folders, sensors, output_path):
@@ -18,12 +20,22 @@ def target(download_folders, sensors, output_path):
     """
 
     """
+    Define the logger
+    """
+    logs_path = r"U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\logs" + "\\"
+    logging.basicConfig(filename=(logs_path + splitext(basename(output_path))[0] + ".log"),
+                        filemode='w',
+                        level=logging.DEBUG)
+
+    logging.info("Started")
+
+    """
     Input variables
     """
     download_folders_path = (r"Q:\1 Projects\2 Development\381 Eskdalemuir"
                              r"\5 Technical\5.1 Monitoring Campaign\381-190109-4013")
 
-    scada_path = r"U:\StephenJ\26_6-11_7_Testing\SCADA_20191028.csv"
+    scada_path = r"U:\StephenJ\26_6-11_7_Testing\SCADA_20191129.csv"
 
     arguments = [(download_folders_path, download_folders, sensor) for sensor in sensors]
 
@@ -55,4 +67,5 @@ def target(download_folders, sensors, output_path):
     print("writing to file")
     output_df.to_csv(output_path, index=False)
 
+    logging.info("Finished")
     return 0

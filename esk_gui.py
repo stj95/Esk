@@ -41,7 +41,7 @@ class EskGui(tk.Frame):
 
         self.download_options = tk.Variable(value=listdir(self.download_path))
         self.sensor_options = tk.Variable(value=["6v70", "6v71", "6v73", "6w19", "6v24", "6o35", "6t93",
-                                                 "Fortis1", "Rad1", "Rad2"])
+                                                 "Fortis1", "Rad1", "Rad2", "Rad3"])
 
         """
         List Boxes
