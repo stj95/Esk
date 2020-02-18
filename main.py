@@ -1,12 +1,13 @@
 from multiprocessing import Pool
+from exception_logging import create_logger
+import _helpers
 import pandas as pd
 import navigation
 import get_scada
 import add_flags
-import add_ons
-import logging
-from os.path import splitext, basename
 
+#log_path = r"U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\logs\esk.log"
+#main_logger = create_logger("main", log_path)
 
 def target(download_folders, sensors, output_path):
 
@@ -18,16 +19,6 @@ def target(download_folders, sensors, output_path):
     :param output_path:
     :return:
     """
-
-    """
-    Define the logger
-    """
-    logs_path = r"U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\logs" + "\\"
-    logging.basicConfig(filename=(logs_path + splitext(basename(output_path))[0] + ".log"),
-                        filemode='w',
-                        level=logging.DEBUG)
-
-    logging.info("Started")
 
     """
     Input variables
@@ -45,6 +36,7 @@ def target(download_folders, sensors, output_path):
     with Pool(processes=4) as p:
         output_df = pd.concat(p.starmap(navigation.psd_download_folder, arguments))
 
+    # output_df = navigation.psd_download_folder(download_folders_path, download_folders, sensors[0])
 
     """
     Merge additional data
@@ -60,12 +52,20 @@ def target(download_folders, sensors, output_path):
     Filter by specific dates
     """
     #print("Date Filtering")
-    #output_df = add_ons.date_filter(output_df)
+    #output_df = _helpers.date_filter(output_df)
 
     #output_df = output_df.rename(columns={"Frequency": "Frequency (Hz)"})
 
     print("writing to file")
     output_df.to_csv(output_path, index=False)
 
-    logging.info("Finished")
     return 0
+
+
+if __name__ == "__main__":
+
+    download_folders = ["2019-12-18"]
+    sensors = ["6v70"]
+    output_path = r"U:\StephenJ\26_6-11_7_Testing\test.csv"
+
+    target(download_folders, sensors, output_path)

@@ -1,15 +1,10 @@
 from os.path import isdir
 from os import listdir
-from scipy import signal
-from obspy.core.stream import Stream
-from decs import logit
-from scipy import integrate
+from exception_logging import create_logger
 import obspy
 import numpy as np
 import pandas as pd
 import _helpers
-import scipy.fftpack as fftp
-import logging
 
 """
 This is where we have the frame work for the program, it will navigate through the files and process the data
@@ -27,23 +22,11 @@ PSD:
                     
     * psd_download_folder: We can now use psd_sensor_folder to deal with an entire download folder.
     
-CORRELATION:
-
-    * correlate_streams: This is the lowest level correlation function, given two streams, it will return the cross
-                    correlation function.
-                    
-    * cross_spectral_density_streams: This function will take the cross correlation function from correlate_streams
-                    and perform a fourier transform, giving us the cross spectral density.
-    
-    * correlate_sensor_folders: Given two sensor folders, this will form two large streams from each sensor folder,
-                    then intersect the streams, and correlate them using correlate_streams.
-                    
-    * correlate_download_folder: Given a set of streams, with corresponding streams to correlate with this, will 
-                    perform all of those correlation functions.
 """
 
+log_path = r"U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\logs\esk.log"
+navigation_logger = create_logger("navigation", log_path)
 
-@logit
 def psd_stream(stream, stream_id, calval, gain, decimation_factor, displacement_factor):
     """
     This does all the processing for one stream of any given length, this is the bulk of the work
@@ -57,19 +40,10 @@ def psd_stream(stream, stream_id, calval, gain, decimation_factor, displacement_
     stream = _helpers._select_channel(stream, stream_id)
     # calibrate the stream (applies calvals, de-trends, and decimates)
     stream = _helpers._calibrate(stream, calval, gain, decimation_factor)
-    # get the timestamps which we want to split the stream into
-    try:
-        template_timestamps = _helpers._get_timestamps(stream)
-    except Exception as e:
-        logging.error("Error with _helper: _get_timestamps", exc_info=e)
-        # This catches an error where im _get_timestamps we assign an hour > 24
-        # TODO: Find a workaround for the above error
-        template_timestamps = []
-        pass
 
     # split the stream between those timestamps
     # noting data_per_bin is a dict {timestamp: data for that bin}
-    data_per_bin = _helpers._stream_to_bins(stream, template_timestamps)
+    data_per_bin = _helpers._stream_to_bins(stream)
 
     # It can happen that we read a stream with no full 10 minute bins, in this case we should just
     # return an empty data frame
@@ -96,12 +70,11 @@ def psd_stream(stream, stream_id, calval, gain, decimation_factor, displacement_
     merged_df = timestamp_df.merge(df, left_index=True, right_index=True, how="outer")
     melted_df = merged_df.melt("TimeStamp")
     melted_df = melted_df.rename(columns={"variable": "Frequency", "value": "PSD"})
-    melted_df = melted_df[(melted_df["Frequency"] <= 10) & (melted_df["Frequency"] > 0)]
+    #melted_df = melted_df[(melted_df["Frequency"] <= 10) & (melted_df["Frequency"] > 0)]
     melted_df["Sensor"] = stream_id
 
     return melted_df
 
-@logit
 def psd_sensor_folder(folder_path, sensor_id):
     """
     Given a folder with GCF files in, this function just PSDs each GCF and concatenates them
@@ -127,14 +100,13 @@ def psd_sensor_folder(folder_path, sensor_id):
             try:
                 stream = obspy.read(folder_path + "\\" + file)
             except ValueError as e:
-                logging.error("Couldn't read stream {}".format((folder_path + "\\" + file)), exc_info=e)
+                navigation_logger.error("Couldn't read stream {}".format((folder_path + "\\" + file)), exc_info=e)
                 continue
             data_frame = psd_stream(stream, sensor_id, calval, gain, decimation_factor, displacement_factor)
             output_df = pd.concat([output_df, data_frame])
 
     return output_df
 
-@logit
 def psd_download_folder(download_folder_path, download_folders, sensor):
     """
     Given a set of download folders and a set of sensors, this finds the correct sensor folders,
@@ -161,143 +133,9 @@ def psd_download_folder(download_folder_path, download_folders, sensor):
                 output_df = pd.concat([output_df, sensor_df])
 
             else:
+                navigation_logger.exception("{} is not a correct path".format(sensor_path))
                 continue
 
     # output: ||TimeStamp| |Frequency| |PSD| |Sensor||
     return output_df
 
-
-"""
-Correlation
-"""
-
-@logit
-def correlate_streams(stream1, stream2):
-    """
-    Takes two streams, and correlates them, returning the full length cross correlation (cc) function
-
-    :param stream1:
-    :param stream2:
-    :return: dict{timestamp: cross correlation}
-    """
-
-    dates1 = _helpers._get_timestamps(stream1)
-    dates2 = _helpers._get_timestamps(stream2)
-
-    # slice the two streams, into 10 minute bins
-    sliced1 = _helpers._stream_to_bins(stream1, dates1)
-    sliced2 = _helpers._stream_to_bins(stream2, dates2)
-
-    # correlate the time periods that are in both streams:
-    # returns {timestamp_i: cross correlation_i} for i in len(intersection)
-    output = {ts: signal.correlate(sliced1[ts], sliced2[ts]) for ts in sliced1 if ts in sliced2}
-
-    return output
-
-@logit
-def csd_streams(stream1, stream2, displacement_factor1, displacement_factor2):
-    """
-
-    :param stream1:
-    :param stream2:
-    :return:
-    """
-
-    dates1 = _helpers._get_timestamps(stream1)
-    dates2 = _helpers._get_timestamps(stream2)
-
-    sliced1 = _helpers._stream_to_bins(stream1, dates1)
-    sliced2 = _helpers._stream_to_bins(stream2, dates2)
-
-    print("integrating stream1")
-    sliced1 = {ts:_helpers._time_integrate(data, displacement_factor1) for ts, data in sliced1.items()}
-    print("integrating stream2")
-    sliced2 = {ts:_helpers._time_integrate(data, displacement_factor2) for ts, data in sliced2.items()}
-
-    # intersect the streams
-    intersected1 = {ts: sliced1[ts] for ts in sliced1 if ts in sliced2}
-    intersected2 = {ts: sliced2[ts] for ts in sliced2 if ts in sliced1}
-
-    # initialise the array
-    freq, _ = _helpers._fft_welchs(list(intersected1.values())[0])
-    array = np.full([len(intersected2), len(freq[1:])], np.nan)
-
-    for index, ts in enumerate(intersected1.keys()):
-        freq, csd_data = _helpers._csd_welches(intersected1[ts], intersected2[ts])
-        # conversion to displacement
-        # note: np.divide & np.power - point wise operations
-        # bigger NOTE: this will only currently work for streams which require the same
-        #               displacement factor. I.e. (velocity-velocity or acceleration-acceleration)
-
-        array[index] = np.abs(csd_data[1:])
-
-    timestamp_df = pd.DataFrame(sorted(intersected1.keys()), columns=["TimeStamp"])
-    df = pd.DataFrame(array, columns=freq[1:])
-
-    merged_df = timestamp_df.merge(df, left_index=True, right_index=True, how="outer")
-    melted_df = merged_df.melt("TimeStamp")
-    melted_df = melted_df.rename(columns={"variable": "Frequency", "value": "PSD"})
-    melted_df = melted_df[(melted_df["Frequency"] <= 10) & (melted_df["Frequency"] > 0)]
-
-    # this obviously needs some other naming convention since its the correlation of two streams
-    # melted_df["Sensor"] = stream_id
-
-    return melted_df
-
-@logit
-def correlate_sensor_folder(path, sensor1, sensor2):
-    """
-
-    :param folder1:
-    :param folder2:
-    :return:
-    """
-
-    def read_folder(folder):
-        stream = Stream()
-        for file in listdir(folder):
-            try:
-                stream += obspy.read(folder + "\\" + file)
-            except Exception as e:
-                logging.error("Couldnt append stream {}".format((folder + "\\" + file)), exc_info=e)
-                print(e)
-                continue
-        return stream
-
-    # read the streams
-    print("reading {}".format(sensor1))
-    stream1 = read_folder(path + "\\" + sensor1)
-
-    print("reading {}".format(sensor2))
-    stream2 = read_folder(path + "\\" + sensor2)
-
-    # get the calibration values
-    print("calibrating")
-    calval1 = _helpers._get_calval(sensor1)
-    calval2 = _helpers._get_calval(sensor2)
-
-    gain1 = _helpers._get_gain(sensor1)
-    gain2 = _helpers._get_gain(sensor2)
-
-    decimation_factor1 = _helpers._get_decimation_factor(sensor1)
-    decimation_factor2 = _helpers._get_decimation_factor(sensor2)
-
-    displacement_factor1 = _helpers._get_displacement_factor(sensor1)
-    displacement_factor2 = _helpers._get_displacement_factor(sensor2)
-
-    # select the right channel
-    stream1 = _helpers._select_channel(stream1, sensor1)
-    stream2 = _helpers._select_channel(stream2, sensor2)
-
-    # calibrate the streams
-    stream1 = _helpers._calibrate(stream1, calval1, gain1, decimation_factor1)
-    stream2 = _helpers._calibrate(stream2, calval2, gain2, decimation_factor2)
-
-    print("csd-ing")
-    csd_data_frame = csd_streams(stream1, stream2, displacement_factor1, displacement_factor2)
-
-    return csd_data_frame
-
-
-def correlate_download_folder(path):
-    return 0

@@ -1,14 +1,11 @@
-from obspy.core.utcdatetime import UTCDateTime
 from datetime import datetime, timedelta
+from obspy.core.utcdatetime import UTCDateTime
 from scipy import signal
-from math import ceil, log2
-from scipy import integrate
 from functools import reduce
-from decs import logit
+from exception_logging import create_logger
 import pandas as pd
 import statistics
 import numpy as np
-import logging
 import obspy
 import os
 
@@ -20,26 +17,29 @@ The general structure for processing the data should be:
     * calibrate the streams (this includes decimation and de-trending) (_calibrate)
     * get the 10 minute interval templates (_get_timestamps)
     * split the data stream into the intervals (_stream_to_bins)
-     
+    
 """
 
-#@logit
+log_path = r"U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\logs\esk.log"
+helper_logger = create_logger("main.navigation.helpers", log_path)
+
 def _get_calval(sensor_id):
     """
     Reads the calvals.pkl pickle, and reads the correct calval
     for the sensor id
     """
+
     filepath = "calvals.pkl"
     try:
         df = pd.read_pickle(filepath)
         calval = df.loc[sensor_id]["calval"]
     except KeyError as e:
-        logging.error("Couldn't read {} calval, set to 1".format(sensor_id), exc_info=e)
+        helper_logger.exception("Couldn't read {} calval, set to 1".format(sensor_id), exc_info=e)
         calval = 1
 
     return calval
 
-#@logit
+
 def _get_gain(sensor_id):
     """
     Reads the sens_details csv, and reads the correct gain value
@@ -51,12 +51,12 @@ def _get_gain(sensor_id):
         df = pd.read_pickle(filepath)
         gain = df.loc[sensor_id]["gain"]
     except KeyError as e:
-        logging.error("Couldn't read {} gain, set to 1".format(sensor_id), exc_info=e)
+        helper_logger.error("Couldn't read {} gain, set to 1".format(sensor_id), exc_info=e)
         gain = 1
 
     return gain
 
-#@logit
+
 def _get_decimation_factor(sensor_id):
     """
     The decimation factor, is the factor by which we reduce the sampling rate (SR), we can afford to drop the sampling
@@ -70,14 +70,18 @@ def _get_decimation_factor(sensor_id):
     :return:
     """
 
-    if sensor_id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad1e2", "Rad1n2", "Rad1z2", "Rad2e2", "Rad2n2", "Rad2z2"]:
+    if sensor_id in ["Fortis1e2", "Fortis1n2", "Fortis1z2",
+                     "Rad4z2", "Rad4n2", "Rad4e2",
+                     "Rad5z2", "Rad5n2", "Rad5e2",
+                     "Rad6z2", "Rad6n2", "Rad6e2"]:
+
         decimation_factor = 4
     else:
         decimation_factor = 2
 
     return decimation_factor
 
-#@logit
+
 def _get_displacement_factor(sensor_id):
     """
     The displacement factor is the exponent of (2*pi*i*f) required to change from the current stream to displacement
@@ -95,12 +99,12 @@ def _get_displacement_factor(sensor_id):
         df = pd.read_pickle(filepath)
         displacement_factor = df.loc[sensor_id]["displacement_factor"]
     except KeyError as e:
-        logging.error("Couldn't read {} displacement factor, set to 1".format(sensor_id), exc_info=e)
+        helper_logger.error("Couldn't read {} displacement factor, set to 1".format(sensor_id), exc_info=e)
         displacement_factor = 1
 
     return displacement_factor
 
-#@logit
+
 def _select_channel(input_stream, stream_id):
     """
     selects the traces with the correct channels, depending on the instrument
@@ -115,7 +119,7 @@ def _select_channel(input_stream, stream_id):
 
     return input_stream
 
-#@logit
+
 def _calibrate(stream, calval, gain, decimation_factor):
     """
     Calibrates the stream given a certain calval
@@ -131,84 +135,43 @@ def _calibrate(stream, calval, gain, decimation_factor):
         trace.data = trace.data * calval/gain
         # de-trend & decimate to avoid spectral leakage,
         # we can afford to lose all frequencies above 50Hz so we decimate to that point (see Nyquist frequency)
-        trace.split()
-        trace.detrend('linear')
-        trace.decimate(decimation_factor)
+        # trace.split()
+        trace.detrend('constant')
+        # Butterworth low pass
+        trace.filter('lowpass', freq=25)
+        # Chebyshev II low pass - this gives a massive roll off - after about 17Hz
+        # trace.filter('lowpass_cheby_2', freq=25)
+        trace.decimate(decimation_factor, no_filter=True)
 
     return stream
 
-#@logit
-def _get_timestamps(stream):
-    """
-    Given a sensor this returns timestamps at 10 minute intervals, this is used as a 'template' to slice
-    the actual data stream
 
-    :param stream:
-    :return: list
-    """
+def _stream_to_bins(st, bin_len=600):
 
-    i_start = stream[0].stats.starttime.datetime.replace(microsecond=0)
-    i_mins = i_start.minute
-    i_hour = i_start.hour
+    fs = 50
+    n_points = fs * bin_len
 
-    # Force start at a ten minute interval
-    diff = 10 - (i_mins % 10)
-    if i_mins % 10 == 0:
-        i_start = i_start.replace(minute=i_mins, second=0)
-    elif i_mins > 50:
-        i_start = i_start.replace(hour=(i_hour+1), minute=0, second=0)
-    else:
-        i_start = i_start.replace(minute=(i_mins+diff), second=0)
+    # internal round up function to get to the first 10 minute period
+    def offset_calc(dt, delta):
+        offset = (datetime.min - dt) % delta
+        return offset
 
-    # Define start and end point (+ 10 mins each because timestamp is at the end of the interval)
-    start = i_start + timedelta(minutes=10)
-    end = stream[-1].stats.endtime.datetime.replace(microsecond=0) + timedelta(seconds=1)
+    ddict = {}
+    for tr in st:
 
-    # Split into 10 minute intervals & change to UTCDateTime
-    t = np.arange(start, end+timedelta(minutes=10), timedelta(minutes=10)).astype(datetime)
-    updateTime = lambda x: UTCDateTime(x)
-    newt = list(map(updateTime, t))
+        # calculate the offset in seconds
+        offset = offset_calc(tr.stats.starttime.datetime, timedelta(seconds=bin_len)).total_seconds()
 
-    return newt
+        # In theory we don't need to have the #microseconds=0 but in practice there is some rounding
+        # error in obspy which changes the number of microseconds, hence wrecking later intersections
+        trans_dict = {wdw.copy().stats.endtime.datetime.replace(microsecond=0): wdw.copy().data[:n_points] for wdw in
+                      tr.slide(window_length=bin_len, step=bin_len, offset=offset) if len(wdw.data) > n_points - 1}
 
-#@logit
-def _stream_to_bins(input_stream, dates):
-    """
-    Cuts the stream between the list of dates, and outputs the data as lists rather than streams
+        ddict.update(trans_dict)
 
-    :param input_stream:
-    :param dates:
-    :return: dict{time stamp: data}
-    """
+    return ddict
 
-    # initialise a dictionary to hold a ten minute time stamp and the corresponding set of stream data
-    data_per_bin = {}
 
-    for date in dates:
-
-        # because the SCADA timestamp is always at the end of the interval, we should go back 10 minutes
-        stream = input_stream.slice(UTCDateTime(date - timedelta(seconds=599.99)), UTCDateTime(date))
-        timestamp = UTCDateTime(date).datetime
-
-        # initialise a bin for a specific 10 minute interval
-        new_bin = []
-        # remove the data from the 10 minute stream and it to the bin
-        for trace in stream:
-            for data_point in trace.data:
-                new_bin.append(data_point)
-
-        # now add the bin to the list of data_bins, and the corresponding timestamp to the list of timestamps
-        # but only if it is a full 10 minute bin, it should be fs * 10 * 60 (except the last bin will have 1 less sample
-        # so we also lose one sample off the other 10 min periods for consistency)
-
-        if len(new_bin) == 50*10*60 - 1:
-            data_per_bin[timestamp] = new_bin
-        elif len(new_bin) == 50*10*60:
-            data_per_bin[timestamp] = new_bin[:-1]
-
-    return data_per_bin
-
-#@logit
 def _fft_welchs(data):
     """
     A function which applies the fft, and welches method
@@ -217,53 +180,14 @@ def _fft_welchs(data):
 
     fs = 50
     n = len(data)
+    #assert n == 30000, "Not full 10 minute period: {} instead of 30000".format(n)
 
-    assert n == 30000-1, "Not full 10 minute period: {} instead of 29999".format(n)
-
-    f, pxx_den = signal.welch(data, fs=fs, nperseg=n//28, nfft=2**ceil(log2(abs(n/28))), detrend=False)
+    #f, pxx_den = signal.welch(data, fs=fs, nperseg=4096, nfft=4096, detrend=False)
+    f, pxx_den = signal.welch(data, fs=fs, nperseg=n//28, nfft=n//28, detrend=False)
 
     return f, pxx_den
 
-#@logit
-def _time_integrate(data, displacement_factor):
-    """
-    Integrates in the time domain, depending on how many times required to get to displacement
-    (displacement_factor)
 
-    This is so bad because of drift, look for an integrator or low pass filter first
-
-    :param stream:
-    :param displacement_factor:
-    :return:
-    """
-
-    for _ in range(int(displacement_factor//2)):
-        data = integrate.cumtrapz(data, initial=0)
-
-    return data
-
-#@logit
-def _csd_welches(data1, data2):
-    """
-    calculates the cross spectral density using welches method
-
-    :param data1:
-    :param data2:
-    :return:
-    """
-
-    fs = 50
-    n1 = len(data1)
-    n2 = len(data2)
-
-    assert n1 == n2, "different length streams: {} vs {}".format(n1, n2)
-    assert n1 == 30000-1, "Not full 10 minute period: {} instead of 29999".format(n1)
-
-    f, cxy_den = signal.csd(data1, data2, fs=fs, nperseg=n1//28, nfft=2**ceil(log2(abs(n1/28))), detrend=False)
-
-    return f, cxy_den
-
-#@logit
 def _iqm(df):
     """
     Take the inter-quartile mean
@@ -282,14 +206,14 @@ def _iqm(df):
         try:
             iqm = statistics.mean(iqr_data)
         except statistics.StatisticsError as e:
-            logging.error("couldn't compute the IQM, set to NaN", exc_info=e)
-            logging.info(data)
+            helper_logger.error("couldn't compute the IQM, set to NaN", exc_info=e)
+            helper_logger.info(data)
             iqm = np.nan
             pass
 
     return iqm
 
-#@logit
+
 def _clean_gcfs(gcf_list):
     """
     removes duplicates and ensures they're all gcf files
@@ -305,11 +229,11 @@ def _clean_gcfs(gcf_list):
                 out_list.append(gcf)
 
         except Exception as e:
-            logging.error("couldn't append gcf {}".format(gcf), exc_info=e)
+            helper_logger.error("couldn't append gcf {}".format(gcf), exc_info=e)
 
     return out_list
 
-#@logit
+
 def _intersect_dicts(dicts):
     """
     intersect
@@ -319,13 +243,13 @@ def _intersect_dicts(dicts):
 
     intersected_keys = list(reduce(lambda x, y: x & y.keys(), dicts))
 
-    for index, dict in enumerate(dicts):
-        dicts[index] = {ts: dict[ts] for ts in dict if ts in intersected_keys}
+    for index, ddict in enumerate(dicts):
+        dicts[index] = {ts: ddict[ts] for ts in ddict if ts in intersected_keys}
 
     return dicts
 
-@logit
-def _read_gcf_folder(path, stream_id):
+
+def _read_folder(path, stream_id):
 
     output_ts_data_dict = {}
 
@@ -335,20 +259,46 @@ def _read_gcf_folder(path, stream_id):
     decimation_factor = _get_decimation_factor(stream_id)
 
     # read the stream, select the correct channel, and apply the calibration factors
-    for gcf in os.listdir(path + "\\" + stream_id):
-        print(stream_id + ": " + gcf)
+    for file in os.listdir(path + "\\" + stream_id):
+
+        # file_type = os.path.splitext(file)[1]
+        print(stream_id + ": " + file)
+
         try:
-            stream = obspy.read(path + "\\" + stream_id + "\\" + gcf)
+            stream = obspy.read(path + "\\" + stream_id + "\\" + file)  # , format=(file_type[1:].upper()))
             stream = _select_channel(stream, stream_id)
             stream = _calibrate(stream, calval, gain, decimation_factor)
-            #stream = stream.filter('bandpass', freqmin=0.5, freqmax=10)
+            #stream = stream.slice(UTCDateTime(2020, 1, 28, 10, 56, 46, 0), UTCDateTime(2020, 1, 28, 10, 56, 56, 0))
+
+            stream = stream.filter('bandpass', freqmin=0.5, freqmax=10)
             # extract the data & timestamps from the stream
-            timestamps = _get_timestamps(stream)
-            ts_data_dict = _stream_to_bins(stream, timestamps)
+            # timestamps = _get_timestamps(stream)
+            ts_data_dict = _stream_to_bins(stream, bin_len=60)
 
             output_ts_data_dict.update(ts_data_dict)
+
         except Exception as e:
-            print(e)
+            helper_logger.error("couldn't read file {}".format(path + "\\ " + stream_id + "\\" + file), exc_info=e)
             output_ts_data_dict.update({})
 
     return output_ts_data_dict
+
+
+def _date_filter(df):
+    """
+    Just filters the TimeStamp column between a load of date ranges
+
+    :param df: The current data frame
+    :return: The filtered data frame
+    """
+
+    date_ranges = [[datetime(2019, 10, 1, 19, 0, 0), datetime(2019, 10, 10, 0, 0, 0)]]
+
+    mask = 0
+    for date_range in date_ranges:
+        sub_mask = (df["TimeStamp"] > date_range[0]) & (df["TimeStamp"] < date_range[1])
+        mask = (mask | sub_mask)
+
+    df = df.loc[mask]
+
+    return df

@@ -1,0 +1,1134 @@
+2020-02-10 15:27:34,332 - main.navigation.helpers - ERROR - Couldn't read Rad4z2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4z2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4z2'
+2020-02-10 15:27:34,367 - main.navigation.helpers - ERROR - Couldn't read Rad4z2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4z2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4z2'
+2020-02-10 15:28:30,466 - main.navigation.helpers - ERROR - Couldn't read Rad4n2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4n2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4n2'
+2020-02-10 15:28:30,481 - main.navigation.helpers - ERROR - Couldn't read Rad4n2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4n2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4n2'
+2020-02-10 15:29:28,335 - main.navigation.helpers - ERROR - Couldn't read Rad4e2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4e2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4e2'
+2020-02-10 15:29:28,346 - main.navigation.helpers - ERROR - Couldn't read Rad4e2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4e2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4e2'
+2020-02-10 15:56:54,153 - main.navigation.helpers - ERROR - Couldn't read Rad4z2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4z2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4z2'
+2020-02-10 15:56:54,187 - main.navigation.helpers - ERROR - Couldn't read Rad4z2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4z2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4z2'
+2020-02-10 15:57:14,201 - main.navigation.helpers - ERROR - Couldn't read Rad4n2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4n2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4n2'
+2020-02-10 15:57:14,211 - main.navigation.helpers - ERROR - Couldn't read Rad4n2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4n2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4n2'
+2020-02-10 15:57:37,161 - main.navigation.helpers - ERROR - Couldn't read Rad4e2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4e2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4e2'
+2020-02-10 15:57:37,172 - main.navigation.helpers - ERROR - Couldn't read Rad4e2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4e2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4e2'
+2020-02-10 16:27:21,420 - main.navigation.helpers - ERROR - Couldn't read Rad4z2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4z2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4z2'
+2020-02-10 16:27:21,458 - main.navigation.helpers - ERROR - Couldn't read Rad4z2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4z2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4z2'
+2020-02-10 16:27:39,650 - main.navigation.helpers - ERROR - Couldn't read Rad4n2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4n2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4n2'
+2020-02-10 16:27:39,666 - main.navigation.helpers - ERROR - Couldn't read Rad4n2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4n2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4n2'
+2020-02-10 16:27:57,366 - main.navigation.helpers - ERROR - Couldn't read Rad4e2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4e2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4e2'
+2020-02-10 16:27:57,382 - main.navigation.helpers - ERROR - Couldn't read Rad4e2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4e2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4e2'
+2020-02-14 11:30:35,692 - main.navigation.helpers - ERROR - Couldn't read Rad4z2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4z2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4z2'
+2020-02-14 11:30:35,770 - main.navigation.helpers - ERROR - Couldn't read Rad4z2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4z2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4z2'
+2020-02-14 11:31:36,923 - main.navigation.helpers - ERROR - Couldn't read Rad5z2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad5z2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad5z2'
+2020-02-14 11:31:36,952 - main.navigation.helpers - ERROR - Couldn't read Rad5z2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad5z2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad5z2'
+2020-02-14 11:31:49,705 - main.navigation.helpers - ERROR - Couldn't read Rad4n2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4n2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4n2'
+2020-02-14 11:31:49,717 - main.navigation.helpers - ERROR - Couldn't read Rad4n2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4n2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4n2'
+2020-02-14 11:31:59,753 - main.navigation.helpers - ERROR - Couldn't read Rad5n2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad5n2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad5n2'
+2020-02-14 11:31:59,768 - main.navigation.helpers - ERROR - Couldn't read Rad5n2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad5n2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad5n2'
+2020-02-14 11:32:20,213 - main.navigation.helpers - ERROR - Couldn't read Rad5e2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad5e2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad5e2'
+2020-02-14 11:32:20,232 - main.navigation.helpers - ERROR - Couldn't read Rad5e2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad5e2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad5e2'
+2020-02-14 11:32:22,095 - main.navigation.helpers - ERROR - Couldn't read Rad6z2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad6z2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad6z2'
+2020-02-14 11:32:22,121 - main.navigation.helpers - ERROR - Couldn't read Rad6z2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad6z2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad6z2'
+2020-02-14 11:32:36,851 - main.navigation.helpers - ERROR - Couldn't read Rad6n2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad6n2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad6n2'
+2020-02-14 11:32:36,873 - main.navigation.helpers - ERROR - Couldn't read Rad6n2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad6n2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad6n2'
+2020-02-14 11:32:43,201 - main.navigation.helpers - ERROR - Couldn't read Rad4e2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4e2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4e2'
+2020-02-14 11:32:43,221 - main.navigation.helpers - ERROR - Couldn't read Rad4e2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4e2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad4e2'
+2020-02-14 11:33:06,953 - main.navigation.helpers - ERROR - Couldn't read Rad6e2 calval, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad6e2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 35, in _get_calval
+    calval = df.loc[sensor_id]["calval"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad6e2'
+2020-02-14 11:33:06,972 - main.navigation.helpers - ERROR - Couldn't read Rad6e2 gain, set to 1
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad6e2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 52, in _get_gain
+    gain = df.loc[sensor_id]["gain"]
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1424, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 1850, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexing.py", line 160, in _get_label
+    return self.obj._xs(label, axis=axis)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\generic.py", line 3737, in xs
+    loc = self.index.get_loc(key)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\pandas\core\indexes\base.py", line 2899, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 107, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 131, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1607, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1614, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Rad6e2'
+2020-02-14 12:49:09,539 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-01-21\ Rad2z2\Sensor1SeismoZSm_0000000100_00027.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 274, in _read_folder
+    ts_data_dict = _stream_to_bins(stream, bin_len=60)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 166, in _stream_to_bins
+    tr.slide(window_length=bin_len, step=bin_len, offset=offset) if len(wdw.data) > n_points - 1}
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 166, in <dictcomp>
+    tr.slide(window_length=bin_len, step=bin_len, offset=offset) if len(wdw.data) > n_points - 1}
+TypeError: 'datetime.datetime' object is not callable
+2020-02-14 12:49:17,714 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-01-21\ Rad2n2\Sensor1SeismoNSm_0000000100_00011.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 274, in _read_folder
+    ts_data_dict = _stream_to_bins(stream, bin_len=60)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 166, in _stream_to_bins
+    tr.slide(window_length=bin_len, step=bin_len, offset=offset) if len(wdw.data) > n_points - 1}
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 166, in <dictcomp>
+    tr.slide(window_length=bin_len, step=bin_len, offset=offset) if len(wdw.data) > n_points - 1}
+TypeError: 'datetime.datetime' object is not callable
+2020-02-14 12:49:23,946 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-01-21\ Rad2e2\Sensor1SeismoESm_0000000100_00031.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 274, in _read_folder
+    ts_data_dict = _stream_to_bins(stream, bin_len=60)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 166, in _stream_to_bins
+    tr.slide(window_length=bin_len, step=bin_len, offset=offset) if len(wdw.data) > n_points - 1}
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 166, in <dictcomp>
+    tr.slide(window_length=bin_len, step=bin_len, offset=offset) if len(wdw.data) > n_points - 1}
+TypeError: 'datetime.datetime' object is not callable
+2020-02-14 12:50:08,765 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-01-21\ Rad2z2\Sensor1SeismoZSm_0000000100_00027.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 274, in _read_folder
+    ts_data_dict = _stream_to_bins(stream, bin_len=60)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 166, in _stream_to_bins
+    tr.slide(window_length=bin_len, step=bin_len, offset=offset) if len(wdw.data) > n_points - 1}
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 166, in <dictcomp>
+    tr.slide(window_length=bin_len, step=bin_len, offset=offset) if len(wdw.data) > n_points - 1}
+TypeError: 'datetime.datetime' object is not callable
+2020-02-14 12:50:16,918 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-01-21\ Rad2n2\Sensor1SeismoNSm_0000000100_00011.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 274, in _read_folder
+    ts_data_dict = _stream_to_bins(stream, bin_len=60)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 166, in _stream_to_bins
+    tr.slide(window_length=bin_len, step=bin_len, offset=offset) if len(wdw.data) > n_points - 1}
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 166, in <dictcomp>
+    tr.slide(window_length=bin_len, step=bin_len, offset=offset) if len(wdw.data) > n_points - 1}
+TypeError: 'datetime.datetime' object is not callable
+2020-02-14 12:50:23,056 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-01-21\ Rad2e2\Sensor1SeismoESm_0000000100_00031.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 274, in _read_folder
+    ts_data_dict = _stream_to_bins(stream, bin_len=60)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 166, in _stream_to_bins
+    tr.slide(window_length=bin_len, step=bin_len, offset=offset) if len(wdw.data) > n_points - 1}
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 166, in <dictcomp>
+    tr.slide(window_length=bin_len, step=bin_len, offset=offset) if len(wdw.data) > n_points - 1}
+TypeError: 'datetime.datetime' object is not callable
