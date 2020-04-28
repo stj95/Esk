@@ -1,7 +1,8 @@
-import tkinter as tk
 from os import listdir
 from main import target
+import tkinter as tk
 import threading
+
 
 class EskGui(tk.Frame):
 
@@ -32,16 +33,14 @@ class EskGui(tk.Frame):
         self.run_button = tk.Button(self.button_container, text="Run", command=self.select_options)
         self.run_button.grid(column=0, row=0, sticky=tk.W + tk.E)
 
-
         """
         Variables
         """
-        self.download_path = (r"Q:\1 Projects\2 Development\381 Eskdalemuir"
-                              r"\5 Technical\5.1 Monitoring Campaign\381-190109-4013")
+        self.download_path = (r"U:\StephenJ\HWU\DataTransfer\DT1")
 
         self.download_options = tk.Variable(value=listdir(self.download_path))
-        self.sensor_options = tk.Variable(value=["test", "6v70", "6v71", "6v73", "6w19", "6v24", "6o35", "6t93",
-                                                 "Fortis1", "Rad1", "Rad2", "Rad3"])
+        self.sensor_options = tk.Variable(value=["6v70", "6v71", "6v73", "6w19", "6v24", "6o35", "6t93",
+                                                 "Fortis1", "Rad1", "Rad2", "Rad3", "Rad4", "Rad5", "Rad6"])
 
         """
         List Boxes
@@ -84,7 +83,6 @@ class EskGui(tk.Frame):
             value = self.download_box.get(download_folder)
             download_out_list.append(value)
 
-
         sensor_selection = self.sensor_box.curselection()
         for sensor in sensor_selection:
             value = self.sensor_box.get(sensor)
@@ -103,15 +101,12 @@ class EskGui(tk.Frame):
         print("set accelerometers to: ", accelerometer_out_list)
         print("set sensors to: ", sensor_out_list)
 
-
         print("Output file: ", self.out_path.get())
 
         args = [self.download_folders, self.sensors, self.out_path.get()]
 
         self.thread = threading.Thread(target=target, args=args)
         self.thread.start()
-
-
 
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@ import unittest
 import obspy
 
 # import the functions to test
-from _helpers import _calibrate
+from helpers import calibrate
 
 class TestHelpers(unittest.TestCase):
     """
@@ -26,7 +26,7 @@ class TestHelpers(unittest.TestCase):
         constructing_stream = self.test_stream.copy()
 
         # This is what the function does
-        test_output = _calibrate(testing_stream, 2, 1, 1)
+        test_output = calibrate(testing_stream, 2, 1, 1)
 
         # satisfy the other conditions in the same way as the function so that we only test the calibration part
         for trace in constructing_stream:
@@ -52,7 +52,7 @@ class TestHelpers(unittest.TestCase):
         # divide all sampling rates by two
         constructed_sample_rates = [trace.stats.sampling_rate/2 for trace in self.test_stream]
         # apply the calibration function to the test stream
-        calibrated_stream = _calibrate(self.test_stream, 1, 1, 2)
+        calibrated_stream = calibrate(self.test_stream, 1, 1, 2)
         # check the same sampler rates are obtained as the constructed_sample_rates
         testing_sample_rates = [trace.stats.sampling_rate for trace in calibrated_stream]
 

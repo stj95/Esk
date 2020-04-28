@@ -1,13 +1,11 @@
 from multiprocessing import Pool
-from exception_logging import create_logger
-import _helpers
+from logs.exception_logging import create_logger
 import pandas as pd
 import navigation
 import get_scada
-import add_flags
 
-#log_path = r"U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\logs\esk.log"
-#main_logger = create_logger("main", log_path)
+log_path = r"U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\logs\esk.log"
+main_logger = create_logger("main", log_path)
 
 def target(download_folders, sensors, output_path):
 
@@ -23,10 +21,9 @@ def target(download_folders, sensors, output_path):
     """
     Input variables
     """
-    download_folders_path = (r"Q:\1 Projects\2 Development\381 Eskdalemuir"
-                             r"\5 Technical\5.1 Monitoring Campaign\381-190109-4013")
+    download_folders_path = (r"C:\Users\stephen.jackson\Community Windpower Ltd\Antonios Porpodas - 381 ESK\2. Data")
 
-    scada_path = r"U:\StephenJ\26_6-11_7_Testing\SCADA_20191129.csv"
+    scada_path = r"U:\StephenJ\26_6-11_7_Testing\SCADA_20200318.csv"
 
     arguments = [(download_folders_path, download_folders, sensor) for sensor in sensors]
 
@@ -45,16 +42,13 @@ def target(download_folders, sensors, output_path):
     scada = get_scada.read_scada(scada_path)
     output_df = output_df.merge(scada, on="TimeStamp", how="left")
 
-    print("Adding Flags")
-    output_df = add_flags.read_flags(output_df)
-
     """
     Filter by specific dates
     """
-    #print("Date Filtering")
-    #output_df = _helpers.date_filter(output_df)
+    # print("Date Filtering")
+    # output_df = _helpers.date_filter(output_df)
 
-    #output_df = output_df.rename(columns={"Frequency": "Frequency (Hz)"})
+    # output_df = output_df.rename(columns={"Frequency": "Frequency (Hz)"})
 
     print("writing to file")
     output_df.to_csv(output_path, index=False)
@@ -64,8 +58,8 @@ def target(download_folders, sensors, output_path):
 
 if __name__ == "__main__":
 
-    download_folders = ["2019-12-18"]
-    sensors = ["6v70"]
-    output_path = r"U:\StephenJ\26_6-11_7_Testing\test.csv"
+    download_folders = ["control data"]
+    sensors = ["Fortis1", "Rad1", "Rad2", "Rad3", "Rad4"]
+    output_path = r"U:\StephenJ\HWU\DataTransfer\DT3 noiseless\control_my_28.csv"
 
     target(download_folders, sensors, output_path)

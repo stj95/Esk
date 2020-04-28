@@ -1132,3 +1132,717 @@ Traceback (most recent call last):
   File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\_helpers.py", line 166, in <dictcomp>
     tr.slide(window_length=bin_len, step=bin_len, offset=offset) if len(wdw.data) > n_points - 1}
 TypeError: 'datetime.datetime' object is not callable
+2020-02-27 14:57:28,616 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4z2\Sensor1SeismoZSm_0000000200_00014.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:30,659 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4z2\Sensor1SeismoZSm_0000000200_00041.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:32,539 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4z2\Sensor1SeismoZSm_0000000200_00045.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:34,456 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4z2\Sensor1SeismoZSm_0000000200_00050.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:36,402 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4z2\Sensor1SeismoZSm_0000000200_00058.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:38,335 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4z2\Sensor1SeismoZSm_0000000200_00067.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:39,788 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4z2\Sensor1SeismoZSm_0000000200_00071.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:41,768 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4n2\Sensor1SeismoNSm_0000000200_00004.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:43,680 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4n2\Sensor1SeismoNSm_0000000200_00043.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:45,610 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4n2\Sensor1SeismoNSm_0000000200_00048.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:47,486 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4n2\Sensor1SeismoNSm_0000000200_00052.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:49,413 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4n2\Sensor1SeismoNSm_0000000200_00063.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:51,381 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4n2\Sensor1SeismoNSm_0000000200_00069.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:52,041 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4n2\Sensor1SeismoNSm_0000000200_00074.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:54,061 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4e2\Sensor1SeismoESm_0000000200_00002.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:56,024 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4e2\Sensor1SeismoESm_0000000200_00042.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:57,945 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4e2\Sensor1SeismoESm_0000000200_00047.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:57:59,861 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4e2\Sensor1SeismoESm_0000000200_00051.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:58:01,813 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4e2\Sensor1SeismoESm_0000000200_00061.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:58:03,707 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4e2\Sensor1SeismoESm_0000000200_00068.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 14:58:04,490 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad4e2\Sensor1SeismoESm_0000000200_00073.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 184, in read_folder
+    stream = select_channel(stream, stream_id)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 34, in select_channel
+    if sensor.id in ["Fortis1e2", "Fortis1n2", "Fortis1z2", "Rad3e2", "Rad3n2", "Rad3z2"]:
+AttributeError: 'str' object has no attribute 'id'
+2020-02-27 15:13:02,764 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\ Rad6z2\msd2gcf.exec
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 183, in read_folder
+    stream = obspy.read(path + "\\" + stream_id + "\\" + file)  # , format=(file_type[1:].upper()))
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-31>", line 2, in read
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\decorator.py", line 301, in _map_example_filename
+    return func(*args, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\stream.py", line 235, in read
+    st.extend(_read(file, format, headonly, **kwargs).traces)
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-32>", line 2, in _read
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\decorator.py", line 211, in uncompress_file
+    result = func(filename, *args, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\stream.py", line 277, in _read
+    headonly=headonly, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\base.py", line 439, in _read_from_plugin
+    raise TypeError('Unknown format for file %s' % filename)
+TypeError: Unknown format for file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-26\Rad6z2\msd2gcf.exec
+2020-03-16 15:27:27,961 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6v71z2 is not a correct path
+NoneType: None
+2020-03-16 15:27:27,963 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6w19z2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,057 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6v71n2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,065 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6v70n2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,069 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6v73n2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,070 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6w19n2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,148 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6v70e2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,149 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6v71e2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,152 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6v73e2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,154 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6w19e2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,181 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6v24z2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,187 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6o35z2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,190 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6t93z2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,193 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Fortis1z2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,217 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6v24n2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,226 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6o35n2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,228 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6t93n2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,231 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Fortis1n2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,251 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6v24e2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,265 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6o35e2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,266 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\6t93e2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,268 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Fortis1e2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,279 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad1z2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,295 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad2z2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,297 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad3z2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,306 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad4z2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,311 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad1n2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,327 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad2n2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,330 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad3n2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,339 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad4n2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,345 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad1e2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,357 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad2e2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,363 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad3e2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,372 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad4e2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,375 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad5z2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,386 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad6z2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,400 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad5n2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,414 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad6n2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,428 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad5e2 is not a correct path
+NoneType: None
+2020-03-16 15:27:28,439 - navigation - ERROR - Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\12-18 December 2019\Rad6e2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,280 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6v70z2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,302 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6v70n2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,310 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6v71z2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,335 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6v71n2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,338 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6v73z2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,350 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6w19z2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,351 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6v70e2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,358 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6v73n2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,375 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6w19n2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,376 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6v24z2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,382 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6v71e2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,398 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6v24n2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,404 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6o35z2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,408 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6v73e2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,420 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6v24e2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,423 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6w19e2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,425 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6o35n2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,431 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6t93z2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,441 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Fortis1z2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,448 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6o35e2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,451 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad1z2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,455 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6t93n2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,463 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Fortis1n2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,470 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad2z2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,477 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad1n2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,480 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\6t93e2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,486 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Fortis1e2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,494 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad2n2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,501 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad1e2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,503 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad3z2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,510 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad4z2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,514 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad2e2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,523 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad5z2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,524 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad3n2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,531 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad4n2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,536 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad6z2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,544 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad5n2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,550 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad3e2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,555 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad4e2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,559 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad6n2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,565 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad5e2 is not a correct path
+NoneType: None
+2020-03-16 15:29:30,578 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\12-18 December 2019\Rad6e2 is not a correct path
+NoneType: None
+2020-03-16 15:30:28,708 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v71z2 is not a correct path
+NoneType: None
+2020-03-16 15:30:28,725 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v71n2 is not a correct path
+NoneType: None
+2020-03-16 15:30:28,748 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v73z2 is not a correct path
+NoneType: None
+2020-03-16 15:30:28,766 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v73n2 is not a correct path
+NoneType: None
+2020-03-16 15:30:28,772 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v71e2 is not a correct path
+NoneType: None
+2020-03-16 15:30:28,786 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6w19z2 is not a correct path
+NoneType: None
+2020-03-16 15:30:28,792 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v24z2 is not a correct path
+NoneType: None
+2020-03-16 15:30:28,803 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6w19n2 is not a correct path
+NoneType: None
+2020-03-16 15:30:28,809 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v24n2 is not a correct path
+NoneType: None
+2020-03-16 15:30:28,809 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v73e2 is not a correct path
+NoneType: None
+2020-03-16 15:30:28,831 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v24e2 is not a correct path
+NoneType: None
+2020-03-16 15:30:28,850 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6t93z2 is not a correct path
+NoneType: None
+2020-03-16 15:30:28,868 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6t93n2 is not a correct path
+NoneType: None
+2020-03-16 15:30:28,888 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6t93e2 is not a correct path
+NoneType: None
+2020-03-16 15:42:21,639 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v73z2 is not a correct path
+NoneType: None
+2020-03-16 15:42:21,643 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6w19z2 is not a correct path
+NoneType: None
+2020-03-16 15:42:21,644 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v71z2 is not a correct path
+NoneType: None
+2020-03-16 15:42:21,670 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v73n2 is not a correct path
+NoneType: None
+2020-03-16 15:42:21,673 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6w19n2 is not a correct path
+NoneType: None
+2020-03-16 15:42:21,675 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v71n2 is not a correct path
+NoneType: None
+2020-03-16 15:42:21,731 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v73e2 is not a correct path
+NoneType: None
+2020-03-16 15:42:21,737 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v71e2 is not a correct path
+NoneType: None
+2020-03-16 15:42:21,739 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6w19e2 is not a correct path
+NoneType: None
+2020-03-16 15:42:21,755 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v24z2 is not a correct path
+NoneType: None
+2020-03-16 15:42:21,767 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6t93z2 is not a correct path
+NoneType: None
+2020-03-16 15:42:21,781 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v24n2 is not a correct path
+NoneType: None
+2020-03-16 15:42:21,788 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6t93n2 is not a correct path
+NoneType: None
+2020-03-16 15:42:21,803 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v24e2 is not a correct path
+NoneType: None
+2020-03-16 15:42:21,809 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6t93e2 is not a correct path
+NoneType: None
+2020-03-18 10:39:10,009 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6w19z2 is not a correct path
+NoneType: None
+2020-03-18 10:39:10,009 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v71z2 is not a correct path
+NoneType: None
+2020-03-18 10:39:10,088 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v73n2 is not a correct path
+NoneType: None
+2020-03-18 10:39:10,088 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6w19n2 is not a correct path
+NoneType: None
+2020-03-18 10:39:10,103 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v71n2 is not a correct path
+NoneType: None
+2020-03-18 10:39:10,119 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v71e2 is not a correct path
+NoneType: None
+2020-03-18 10:39:10,119 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6w19e2 is not a correct path
+NoneType: None
+2020-03-18 10:39:10,134 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v24z2 is not a correct path
+NoneType: None
+2020-03-18 10:39:10,134 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6t93z2 is not a correct path
+NoneType: None
+2020-03-18 10:39:10,150 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v24n2 is not a correct path
+NoneType: None
+2020-03-18 10:39:10,150 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6t93n2 is not a correct path
+NoneType: None
+2020-03-18 10:39:10,181 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v24e2 is not a correct path
+NoneType: None
+2020-03-18 10:39:10,181 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6t93e2 is not a correct path
+NoneType: None
+2020-03-18 16:51:06,154 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v73z2 is not a correct path
+NoneType: None
+2020-03-18 16:51:06,212 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6w19z2 is not a correct path
+NoneType: None
+2020-03-18 16:51:06,228 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v73n2 is not a correct path
+NoneType: None
+2020-03-18 16:51:06,228 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v71n2 is not a correct path
+NoneType: None
+2020-03-18 16:51:06,245 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v73e2 is not a correct path
+NoneType: None
+2020-03-18 16:51:06,245 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v71e2 is not a correct path
+NoneType: None
+2020-03-18 16:51:06,253 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6w19n2 is not a correct path
+NoneType: None
+2020-03-18 16:51:06,266 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v24z2 is not a correct path
+NoneType: None
+2020-03-18 16:51:06,272 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6w19e2 is not a correct path
+NoneType: None
+2020-03-18 16:51:06,283 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v24n2 is not a correct path
+NoneType: None
+2020-03-18 16:51:06,289 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6t93z2 is not a correct path
+NoneType: None
+2020-03-18 16:51:06,301 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v24e2 is not a correct path
+NoneType: None
+2020-03-18 16:51:06,308 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6t93n2 is not a correct path
+NoneType: None
+2020-03-18 16:51:06,324 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6t93e2 is not a correct path
+NoneType: None
+2020-03-19 09:24:12,607 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\2019-12-18\6v70z2 is not a correct path
+NoneType: None
+2020-03-19 09:24:12,686 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\2019-12-18\6v70n2 is not a correct path
+NoneType: None
+2020-03-19 09:24:12,730 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\2019-12-18\6v70e2 is not a correct path
+NoneType: None
+2020-03-19 09:26:32,009 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\2019-12-18\6v70z2 is not a correct path
+NoneType: None
+2020-03-19 09:26:32,067 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\2019-12-18\6v70n2 is not a correct path
+NoneType: None
+2020-03-19 09:26:32,114 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\2019-12-18\6v70e2 is not a correct path
+NoneType: None
+2020-03-19 09:27:52,662 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\2019-12-18\6o35z2 is not a correct path
+NoneType: None
+2020-03-19 09:27:52,699 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\2019-12-18\6o35n2 is not a correct path
+NoneType: None
+2020-03-19 09:27:52,740 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\2019-12-18\6o35e2 is not a correct path
+NoneType: None
+2020-03-19 10:13:16,151 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v71z2 is not a correct path
+NoneType: None
+2020-03-19 10:13:16,158 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v73z2 is not a correct path
+NoneType: None
+2020-03-19 10:13:16,160 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6w19z2 is not a correct path
+NoneType: None
+2020-03-19 10:13:16,213 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v71n2 is not a correct path
+NoneType: None
+2020-03-19 10:13:16,214 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v73n2 is not a correct path
+NoneType: None
+2020-03-19 10:13:16,232 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6w19e2 is not a correct path
+NoneType: None
+2020-03-19 10:13:16,234 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v71e2 is not a correct path
+NoneType: None
+2020-03-19 10:13:16,254 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v24z2 is not a correct path
+NoneType: None
+2020-03-19 10:13:16,255 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6t93z2 is not a correct path
+NoneType: None
+2020-03-19 10:13:16,273 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v24n2 is not a correct path
+NoneType: None
+2020-03-19 10:13:16,274 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6t93n2 is not a correct path
+NoneType: None
+2020-03-19 10:13:16,291 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6v24e2 is not a correct path
+NoneType: None
+2020-03-19 10:13:16,292 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT1\15-21 January 2020\6t93e2 is not a correct path
+NoneType: None
+2020-03-19 17:06:33,919 - main.navigation.helpers - ERROR - couldn't compute the IQM, set to NaN
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 132, in iqm
+    iqm = statistics.mean(iqr_data)
+  File "C:\Anaconda3\envs\esk\lib\statistics.py", line 310, in mean
+    raise StatisticsError('mean requires at least one data point')
+statistics.StatisticsError: mean requires at least one data point
+2020-03-19 17:06:33,978 - main.navigation.helpers - INFO - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+2020-03-24 11:17:17,233 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4z2 is not a correct path
+NoneType: None
+2020-03-24 11:17:17,263 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4n2 is not a correct path
+NoneType: None
+2020-03-24 11:17:17,294 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4e2 is not a correct path
+NoneType: None
+2020-03-24 15:02:44,937 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4z2 is not a correct path
+NoneType: None
+2020-03-24 15:02:44,983 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4n2 is not a correct path
+NoneType: None
+2020-03-24 15:02:45,030 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4e2 is not a correct path
+NoneType: None
+2020-03-24 15:12:09,704 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4z2 is not a correct path
+NoneType: None
+2020-03-24 15:12:09,735 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4n2 is not a correct path
+NoneType: None
+2020-03-24 15:12:09,782 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4e2 is not a correct path
+NoneType: None
+2020-03-24 15:33:54,322 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4z2 is not a correct path
+NoneType: None
+2020-03-24 15:33:54,353 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4n2 is not a correct path
+NoneType: None
+2020-03-24 15:33:54,369 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4e2 is not a correct path
+NoneType: None
+2020-03-24 15:44:07,591 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4z2 is not a correct path
+NoneType: None
+2020-03-24 15:44:07,607 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4n2 is not a correct path
+NoneType: None
+2020-03-24 15:44:07,638 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4e2 is not a correct path
+NoneType: None
+2020-03-24 15:53:01,763 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4z2 is not a correct path
+NoneType: None
+2020-03-24 15:53:01,794 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4n2 is not a correct path
+NoneType: None
+2020-03-24 15:53:01,809 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4e2 is not a correct path
+NoneType: None
+2020-03-24 16:08:48,503 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4z2 is not a correct path
+NoneType: None
+2020-03-24 16:08:48,550 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4n2 is not a correct path
+NoneType: None
+2020-03-24 16:08:48,597 - navigation - ERROR - U:\StephenJ\HWU\DataTransfer\DT3 noiseless\Rad4e2 is not a correct path
+NoneType: None
+2020-03-26 17:10:23,242 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-25\ Rad1z2\msd2gcf.exec
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 196, in read_folder
+    stream = obspy.read(path + "\\" + sensor.id + "\\" + file)  # , format=(file_type[1:].upper()))
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-147>", line 2, in read
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\decorator.py", line 300, in _map_example_filename
+    return func(*args, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\stream.py", line 212, in read
+    st = _generic_reader(pathname_or_url, _read, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\base.py", line 701, in _generic_reader
+    generic = callback_func(pathnames[0], **kwargs)
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-148>", line 2, in _read
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\decorator.py", line 210, in uncompress_file
+    result = func(filename, *args, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\stream.py", line 257, in _read
+    headonly=headonly, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\base.py", line 449, in _read_from_plugin
+    raise TypeError('Unknown format for file %s' % filename)
+TypeError: Unknown format for file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-25\Rad1z2\msd2gcf.exec
+2020-04-08 13:42:59,927 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-01-21\ Rad3z2\msd2gcf.exec
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 195, in read_folder
+    stream = obspy.read(path + "\\" + sensor.id + "\\" + file)  # , format=(file_type[1:].upper()))
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-31>", line 2, in read
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\decorator.py", line 300, in _map_example_filename
+    return func(*args, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\stream.py", line 212, in read
+    st = _generic_reader(pathname_or_url, _read, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\base.py", line 701, in _generic_reader
+    generic = callback_func(pathnames[0], **kwargs)
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-32>", line 2, in _read
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\decorator.py", line 210, in uncompress_file
+    result = func(filename, *args, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\stream.py", line 257, in _read
+    headonly=headonly, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\base.py", line 449, in _read_from_plugin
+    raise TypeError('Unknown format for file %s' % filename)
+TypeError: Unknown format for file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-01-21\Rad3z2\msd2gcf.exec
+2020-04-08 13:43:38,989 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-01-21\ Rad5z2\msd2gcf.exec
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 195, in read_folder
+    stream = obspy.read(path + "\\" + sensor.id + "\\" + file)  # , format=(file_type[1:].upper()))
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-31>", line 2, in read
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\decorator.py", line 300, in _map_example_filename
+    return func(*args, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\stream.py", line 212, in read
+    st = _generic_reader(pathname_or_url, _read, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\base.py", line 701, in _generic_reader
+    generic = callback_func(pathnames[0], **kwargs)
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-32>", line 2, in _read
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\decorator.py", line 210, in uncompress_file
+    result = func(filename, *args, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\stream.py", line 257, in _read
+    headonly=headonly, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\base.py", line 449, in _read_from_plugin
+    raise TypeError('Unknown format for file %s' % filename)
+TypeError: Unknown format for file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-01-21\Rad5z2\msd2gcf.exec
+2020-04-08 13:50:48,127 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-01-21\ Rad3z2\msd2gcf.exec
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 195, in read_folder
+    stream = obspy.read(path + "\\" + sensor.id + "\\" + file)  # , format=(file_type[1:].upper()))
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-31>", line 2, in read
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\decorator.py", line 300, in _map_example_filename
+    return func(*args, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\stream.py", line 212, in read
+    st = _generic_reader(pathname_or_url, _read, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\base.py", line 701, in _generic_reader
+    generic = callback_func(pathnames[0], **kwargs)
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-32>", line 2, in _read
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\decorator.py", line 210, in uncompress_file
+    result = func(filename, *args, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\stream.py", line 257, in _read
+    headonly=headonly, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\base.py", line 449, in _read_from_plugin
+    raise TypeError('Unknown format for file %s' % filename)
+TypeError: Unknown format for file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-01-21\Rad3z2\msd2gcf.exec
+2020-04-08 13:51:29,455 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-01-21\ Rad5z2\msd2gcf.exec
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 195, in read_folder
+    stream = obspy.read(path + "\\" + sensor.id + "\\" + file)  # , format=(file_type[1:].upper()))
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-31>", line 2, in read
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\decorator.py", line 300, in _map_example_filename
+    return func(*args, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\stream.py", line 212, in read
+    st = _generic_reader(pathname_or_url, _read, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\base.py", line 701, in _generic_reader
+    generic = callback_func(pathnames[0], **kwargs)
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-32>", line 2, in _read
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\decorator.py", line 210, in uncompress_file
+    result = func(filename, *args, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\stream.py", line 257, in _read
+    headonly=headonly, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\base.py", line 449, in _read_from_plugin
+    raise TypeError('Unknown format for file %s' % filename)
+TypeError: Unknown format for file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-01-21\Rad5z2\msd2gcf.exec
+2020-04-08 14:32:07,201 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-01-21\ Rad3z2\msd2gcf.exec
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 195, in read_folder
+    stream = obspy.read(path + "\\" + sensor.id + "\\" + file)  # , format=(file_type[1:].upper()))
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-31>", line 2, in read
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\decorator.py", line 300, in _map_example_filename
+    return func(*args, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\stream.py", line 212, in read
+    st = _generic_reader(pathname_or_url, _read, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\base.py", line 701, in _generic_reader
+    generic = callback_func(pathnames[0], **kwargs)
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-32>", line 2, in _read
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\decorator.py", line 210, in uncompress_file
+    result = func(filename, *args, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\stream.py", line 257, in _read
+    headonly=headonly, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\base.py", line 449, in _read_from_plugin
+    raise TypeError('Unknown format for file %s' % filename)
+TypeError: Unknown format for file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-01-21\Rad3z2\msd2gcf.exec
+2020-04-09 11:19:28,059 - navigation - ERROR - C:\Users\stephen.jackson\Community Windpower Ltd\Antonios Porpodas - 381 ESK\2. Data\control data\DT3 noiseless\Fortis1z2 is not a correct path
+NoneType: None
+2020-04-09 11:19:28,071 - navigation - ERROR - C:\Users\stephen.jackson\Community Windpower Ltd\Antonios Porpodas - 381 ESK\2. Data\control data\DT3 noiseless\Rad1z2 is not a correct path
+NoneType: None
+2020-04-09 11:19:28,071 - navigation - ERROR - C:\Users\stephen.jackson\Community Windpower Ltd\Antonios Porpodas - 381 ESK\2. Data\control data\DT3 noiseless\Rad3z2 is not a correct path
+NoneType: None
+2020-04-09 11:19:28,102 - navigation - ERROR - C:\Users\stephen.jackson\Community Windpower Ltd\Antonios Porpodas - 381 ESK\2. Data\control data\DT3 noiseless\Rad1n2 is not a correct path
+NoneType: None
+2020-04-09 11:19:28,102 - navigation - ERROR - C:\Users\stephen.jackson\Community Windpower Ltd\Antonios Porpodas - 381 ESK\2. Data\control data\DT3 noiseless\Fortis1n2 is not a correct path
+NoneType: None
+2020-04-09 11:19:28,102 - navigation - ERROR - C:\Users\stephen.jackson\Community Windpower Ltd\Antonios Porpodas - 381 ESK\2. Data\control data\DT3 noiseless\Rad2n2 is not a correct path
+NoneType: None
+2020-04-09 11:19:28,102 - navigation - ERROR - C:\Users\stephen.jackson\Community Windpower Ltd\Antonios Porpodas - 381 ESK\2. Data\control data\DT3 noiseless\Rad3n2 is not a correct path
+NoneType: None
+2020-04-09 11:19:28,134 - navigation - ERROR - C:\Users\stephen.jackson\Community Windpower Ltd\Antonios Porpodas - 381 ESK\2. Data\control data\DT3 noiseless\Rad1e2 is not a correct path
+NoneType: None
+2020-04-09 11:19:28,143 - navigation - ERROR - C:\Users\stephen.jackson\Community Windpower Ltd\Antonios Porpodas - 381 ESK\2. Data\control data\DT3 noiseless\Fortis1e2 is not a correct path
+NoneType: None
+2020-04-09 11:19:28,143 - navigation - ERROR - C:\Users\stephen.jackson\Community Windpower Ltd\Antonios Porpodas - 381 ESK\2. Data\control data\DT3 noiseless\Rad3e2 is not a correct path
+NoneType: None
+2020-04-09 11:19:28,143 - navigation - ERROR - C:\Users\stephen.jackson\Community Windpower Ltd\Antonios Porpodas - 381 ESK\2. Data\control data\DT3 noiseless\Rad2e2 is not a correct path
+NoneType: None
+2020-04-09 11:19:28,159 - navigation - ERROR - C:\Users\stephen.jackson\Community Windpower Ltd\Antonios Porpodas - 381 ESK\2. Data\control data\DT3 noiseless\Rad4z2 is not a correct path
+NoneType: None
+2020-04-09 11:19:28,196 - navigation - ERROR - C:\Users\stephen.jackson\Community Windpower Ltd\Antonios Porpodas - 381 ESK\2. Data\control data\DT3 noiseless\Rad4n2 is not a correct path
+NoneType: None
+2020-04-09 11:19:28,227 - navigation - ERROR - C:\Users\stephen.jackson\Community Windpower Ltd\Antonios Porpodas - 381 ESK\2. Data\control data\DT3 noiseless\Rad4e2 is not a correct path
+NoneType: None
+2020-04-14 15:28:07,871 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-04\ Rad2n2\Sensor1SeismoNSm_0000000200_00010.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 199, in read_folder
+    stream = calibrate(stream, sensor)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 59, in calibrate
+    trace.filter('lowpass', freq=25)
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-9>", line 2, in filter
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\trace.py", line 273, in _add_processing_info
+    result = func(*args, **kwargs)
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-8>", line 2, in filter
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\decorator.py", line 234, in raise_if_masked
+    return func(*args, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\trace.py", line 1545, in filter
+    self.data = func(self.data, df=self.stats.sampling_rate, **options)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\signal\filter.py", line 153, in lowpass
+    output='zpk')
+  File "C:\Anaconda3\envs\esk\lib\site-packages\scipy\signal\filter_design.py", line 2341, in iirfilter
+    raise ValueError("Digital filter critical frequencies "
+ValueError: Digital filter critical frequencies must be 0 < Wn < 1
+2020-04-14 15:28:40,434 - main.navigation.helpers - ERROR - couldn't read file Q:\1 Projects\2 Development\381 Eskdalemuir\5 Technical\5.1 Monitoring Campaign\381-190109-4013\2020-02-04\ Rad2e2\Sensor1SeismoESm_0000000200_00011.mseed
+Traceback (most recent call last):
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 199, in read_folder
+    stream = calibrate(stream, sensor)
+  File "U:\StephenJ\Python\Seismometer_Status\GCF_Python\Branch\helpers.py", line 59, in calibrate
+    trace.filter('lowpass', freq=25)
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-9>", line 2, in filter
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\trace.py", line 273, in _add_processing_info
+    result = func(*args, **kwargs)
+  File "<C:\Anaconda3\envs\esk\lib\site-packages\decorator.py:decorator-gen-8>", line 2, in filter
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\util\decorator.py", line 234, in raise_if_masked
+    return func(*args, **kwargs)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\core\trace.py", line 1545, in filter
+    self.data = func(self.data, df=self.stats.sampling_rate, **options)
+  File "C:\Anaconda3\envs\esk\lib\site-packages\obspy\signal\filter.py", line 153, in lowpass
+    output='zpk')
+  File "C:\Anaconda3\envs\esk\lib\site-packages\scipy\signal\filter_design.py", line 2341, in iirfilter
+    raise ValueError("Digital filter critical frequencies "
+ValueError: Digital filter critical frequencies must be 0 < Wn < 1
